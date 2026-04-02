@@ -18,10 +18,11 @@ const maxReasoningIterations = 10
 // Orchestrator manages the reasoning loop: context rehidration, LLM calls,
 // tool dispatch, and response streaming.
 type Orchestrator struct {
-	fabric    *llm.Fabric
-	toolReg   *tools.Registry
-	convStore *store.ConversationStore
-	telemetry *TelemetryService
+	fabric      *llm.Fabric
+	toolReg     *tools.Registry
+	convStore   *store.ConversationStore
+	promptStore *store.PromptStore
+	telemetry   *TelemetryService
 }
 
 // NewOrchestrator creates a new Orchestrator.
@@ -29,13 +30,15 @@ func NewOrchestrator(
 	fabric *llm.Fabric,
 	toolReg *tools.Registry,
 	convStore *store.ConversationStore,
+	promptStore *store.PromptStore,
 	telemetry *TelemetryService,
 ) *Orchestrator {
 	return &Orchestrator{
-		fabric:    fabric,
-		toolReg:   toolReg,
-		convStore: convStore,
-		telemetry: telemetry,
+		fabric:      fabric,
+		toolReg:     toolReg,
+		convStore:   convStore,
+		promptStore: promptStore,
+		telemetry:   telemetry,
 	}
 }
 
@@ -47,6 +50,8 @@ type RunParams struct {
 	Message     string
 	Attachments []model.Attachment
 	Model       string // which LLM model to use
+	PromptID    string // dynamic prompt to use (resolved from store)
+	AgentID     string // agent to run (resolved from store)
 }
 
 // Run executes the full reasoning loop and returns a channel of SSE events.
@@ -184,10 +189,17 @@ func (o *Orchestrator) executeLoop(ctx context.Context, params RunParams, eventC
 func (o *Orchestrator) buildMessages(history []model.ConversationMessage, params RunParams) []llm.Message {
 	messages := make([]llm.Message, 0, len(history)+3)
 
-	// System prompt
+	// System prompt — resolve dynamically from store, fallback to default
+	systemPrompt := "Eres un asistente de IA especializado. Responde de forma precisa y útil."
+	if params.PromptID != "" && o.promptStore != nil {
+		org := params.TenantID
+		if p, err := o.promptStore.GetActivePrompt(context.Background(), params.PromptID, org); err == nil && p != nil {
+			systemPrompt = p.Content
+		}
+	}
 	messages = append(messages, llm.Message{
 		Role:    llm.RoleSystem,
-		Content: "Eres un asistente de IA especializado. Responde de forma precisa y útil.",
+		Content: systemPrompt,
 	})
 
 	// History

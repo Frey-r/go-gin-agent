@@ -12,6 +12,7 @@ import (
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
 
+	"github.com/ebachmann/go-gin-agent/internal/agent"
 	"github.com/ebachmann/go-gin-agent/internal/config"
 	"github.com/ebachmann/go-gin-agent/internal/handler"
 	"github.com/ebachmann/go-gin-agent/internal/llm"
@@ -43,6 +44,7 @@ func main() {
 
 	userStore := store.NewUserStore(db)
 	convStore := store.NewConversationStore(db)
+	promptStore := store.NewPromptStore(db)
 
 	// ── Services ────────────────────────────────────────────────
 	authService := service.NewAuthService(userStore, cfg)
@@ -79,13 +81,19 @@ func main() {
 	// toolRegistry.Register("run_script", tools.NewLambdaExecutor("https://lambda.example.com", 30))
 
 	// ── Orchestrator ────────────────────────────────────────────
-	orchestrator := service.NewOrchestrator(fabric, toolRegistry, convStore, telemetry)
+	orchestrator := service.NewOrchestrator(fabric, toolRegistry, convStore, promptStore, telemetry)
+
+	// ── Agent Runner ────────────────────────────────────────────
+	agentRunner := agent.NewRunner(fabric, toolRegistry, promptStore, convStore)
+	// Agent definitions are loaded per-organization on demand
+	_ = agentRunner // available for chat handler when agent_id is specified
 
 	// ── Handlers ────────────────────────────────────────────────
 	authHandler := handler.NewAuthHandler(authService)
 	chatHandler := handler.NewChatHandler(orchestrator, cfg.LLMTimeoutSeconds)
 	healthHandler := handler.NewHealthHandler(db)
 	webhookHandler := handler.NewWebhookHandler(os.Getenv("WEBHOOK_SECRET"))
+	promptHandler := handler.NewPromptHandler(promptStore)
 
 	// ── Rate Limiters ───────────────────────────────────────────
 	apiLimiter := middleware.NewRateLimiter(cfg.RateLimitRPM)
@@ -130,8 +138,23 @@ func main() {
 	protected.Use(middleware.Auth(cfg.JWTSecret))
 	protected.Use(apiLimiter.ByTenant())
 	{
+		// Chat
 		protected.POST("/chat/stream", chatHandler.Stream)
+
+		// Webhooks
 		protected.POST("/webhooks", webhookHandler.Handle)
+
+		// Prompt Management
+		protected.PUT("/prompts", promptHandler.UpsertPrompt)
+		protected.GET("/prompts", promptHandler.ListPrompts)
+		protected.GET("/prompts/:prompt_id", promptHandler.GetPrompt)
+		protected.GET("/prompts/:prompt_id/history", promptHandler.GetPromptHistory)
+		protected.DELETE("/prompts/:prompt_id", promptHandler.DeletePrompt)
+
+		// Agent Management
+		protected.PUT("/agents", promptHandler.UpsertAgent)
+		protected.GET("/agents", promptHandler.ListAgents)
+		protected.GET("/agents/:agent_id", promptHandler.GetAgent)
 	}
 
 	// ── HTTP Server with Graceful Shutdown ───────────────────────

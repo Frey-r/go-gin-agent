@@ -1,0 +1,792 @@
+{
+  "info": {
+    "name": "Go Gin Agent — Orquestador Multi-Agéntico",
+    "description": "Colección completa para el orquestador multi-agéntico Go + Gin.\n\n## Setup\n1. Configura las variables `base_url`, `jwt_secret` y `jwt_refresh_secret`\n2. Ejecuta **Register** (necesitas una invitación previa en la DB)\n3. Ejecuta **Login** — los tokens se guardan automáticamente\n4. Las demás requests usan el token automáticamente\n\n## Auto-refresh\nEl access token se inyecta en todas las requests protegidas vía la variable `{{access_token}}`.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8080",
+      "type": "string"
+    },
+    {
+      "key": "access_token",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "refresh_token",
+      "value": "",
+      "type": "string"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{access_token}}",
+        "type": "string"
+      }
+    ]
+  },
+  "item": [
+    {
+      "name": "🏥 Health",
+      "item": [
+        {
+          "name": "Health Check",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/health",
+              "host": ["{{base_url}}"],
+              "path": ["health"]
+            },
+            "description": "Verifica el estado del servidor: SQLite, memoria, goroutines, uptime."
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Status 200', function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "pm.test('Database connected', function () {",
+                  "    var json = pm.response.json();",
+                  "    pm.expect(json.database).to.eql('connected');",
+                  "});",
+                  "",
+                  "pm.test('Security headers present', function () {",
+                  "    pm.response.to.have.header('X-Content-Type-Options');",
+                  "    pm.response.to.have.header('X-Frame-Options');",
+                  "    pm.response.to.have.header('X-Request-ID');",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "🔐 Auth",
+      "item": [
+        {
+          "name": "Register",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"admin@acme-corp.com\",\n  \"password\": \"SecureP@ss123\",\n  \"name\": \"Admin User\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/auth/register",
+              "host": ["{{base_url}}"],
+              "path": ["api", "v1", "auth", "register"]
+            },
+            "description": "Registra un nuevo usuario. **Requiere invitación previa** en la DB.\n\nPassword: mínimo 8 chars, 1 mayúscula, 1 número, 1 símbolo."
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Status 201 Created', function () {",
+                  "    pm.response.to.have.status(201);",
+                  "});",
+                  "",
+                  "pm.test('User created', function () {",
+                  "    var json = pm.response.json();",
+                  "    pm.expect(json.message).to.eql('account created successfully');",
+                  "    pm.expect(json.user).to.have.property('id');",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Login",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"admin@acme-corp.com\",\n  \"password\": \"SecureP@ss123\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/auth/login",
+              "host": ["{{base_url}}"],
+              "path": ["api", "v1", "auth", "login"]
+            },
+            "description": "Autentica un usuario y devuelve access_token (15min) + refresh_token (7d).\n\nLos tokens se guardan automáticamente en las variables de la colección."
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Status 200', function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "pm.test('Tokens received', function () {",
+                  "    var json = pm.response.json();",
+                  "    pm.expect(json).to.have.property('access_token');",
+                  "    pm.expect(json).to.have.property('refresh_token');",
+                  "});",
+                  "",
+                  "// Auto-save tokens to collection variables",
+                  "if (pm.response.code === 200) {",
+                  "    var json = pm.response.json();",
+                  "    pm.collectionVariables.set('access_token', json.access_token);",
+                  "    pm.collectionVariables.set('refresh_token', json.refresh_token);",
+                  "    console.log('✅ Tokens saved to collection variables');",
+                  "}"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Login (Invalid Password)",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"admin@acme-corp.com\",\n  \"password\": \"wrongpassword\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/auth/login",
+              "host": ["{{base_url}}"],
+              "path": ["api", "v1", "auth", "login"]
+            },
+            "description": "Test de login con credenciales inválidas. Debe devolver 401 con mensaje genérico (sin revelar si el email existe)."
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Status 401 Unauthorized', function () {",
+                  "    pm.response.to.have.status(401);",
+                  "});",
+                  "",
+                  "pm.test('Generic error message', function () {",
+                  "    var json = pm.response.json();",
+                  "    pm.expect(json.error).to.eql('invalid credentials');",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Refresh Token",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"refresh_token\": \"{{refresh_token}}\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/auth/refresh",
+              "host": ["{{base_url}}"],
+              "path": ["api", "v1", "auth", "refresh"]
+            },
+            "description": "Rota el refresh token: revoca el anterior y genera un nuevo par access + refresh."
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Status 200', function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "// Auto-save new tokens",
+                  "if (pm.response.code === 200) {",
+                  "    var json = pm.response.json();",
+                  "    pm.collectionVariables.set('access_token', json.access_token);",
+                  "    pm.collectionVariables.set('refresh_token', json.refresh_token);",
+                  "    console.log('✅ Tokens rotated and saved');",
+                  "}"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "📝 Prompts",
+      "item": [
+        {
+          "name": "Create/Update Prompt",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"prompt_id\": \"sales-assistant\",\n  \"organization\": \"acme-corp\",\n  \"content\": \"Eres un asistente de ventas experto de Acme Corp. Responde preguntas sobre productos, precios y disponibilidad. Sé amable, profesional y conciso. Si no tienes información, dilo honestamente.\",\n  \"metadata\": \"{\\\"temperature\\\": 0.7, \\\"preferred_model\\\": \\\"gemini-2.5-pro\\\"}\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/prompts",
+              "host": ["{{base_url}}"],
+              "path": ["api", "v1", "prompts"]
+            },
+            "description": "Crea o actualiza un prompt. Cada PUT crea una nueva versión y desactiva la anterior automáticamente."
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Status 200', function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "pm.test('Prompt saved', function () {",
+                  "    var json = pm.response.json();",
+                  "    pm.expect(json.message).to.eql('prompt updated');",
+                  "    pm.expect(json.prompt).to.have.property('version');",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Create Researcher Prompt",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"prompt_id\": \"researcher-prompt\",\n  \"organization\": \"acme-corp\",\n  \"content\": \"Eres un investigador experto. Tu trabajo es buscar información relevante usando las herramientas disponibles, cruzar fuentes, y sintetizar hallazgos claros y bien citados. Siempre incluye las fuentes de tu información.\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/prompts",
+              "host": ["{{base_url}}"],
+              "path": ["api", "v1", "prompts"]
+            },
+            "description": "Crea el prompt para el sub-agente researcher."
+          },
+          "response": []
+        },
+        {
+          "name": "Create Coder Prompt",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"prompt_id\": \"coder-prompt\",\n  \"organization\": \"acme-corp\",\n  \"content\": \"Eres un desarrollador senior. Analiza código, sugiere mejoras siguiendo best practices, y escribes implementaciones robustas. Siempre incluye manejo de errores y tests cuando sea apropiado.\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/prompts",
+              "host": ["{{base_url}}"],
+              "path": ["api", "v1", "prompts"]
+            },
+            "description": "Crea el prompt para el sub-agente coder."
+          },
+          "response": []
+        },
+        {
+          "name": "Create Orchestrator Prompt",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"prompt_id\": \"master-orchestrator\",\n  \"organization\": \"acme-corp\",\n  \"content\": \"Eres el orquestador principal. Tu trabajo es analizar la solicitud del usuario y decidir si puedes responder directamente o si necesitas delegar a un agente especializado.\\n\\nSub-agentes disponibles:\\n- researcher: para investigación y síntesis de información\\n- coder: para tareas de código y análisis técnico\\n\\nDelega cuando la tarea requiera especialización. Compila los resultados de los sub-agentes en una respuesta coherente y completa para el usuario.\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/prompts",
+              "host": ["{{base_url}}"],
+              "path": ["api", "v1", "prompts"]
+            },
+            "description": "Crea el prompt para el agente orquestador principal."
+          },
+          "response": []
+        },
+        {
+          "name": "List Prompts",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/v1/prompts?organization=acme-corp",
+              "host": ["{{base_url}}"],
+              "path": ["api", "v1", "prompts"],
+              "query": [
+                {
+                  "key": "organization",
+                  "value": "acme-corp"
+                }
+              ]
+            },
+            "description": "Lista todos los prompts activos de la organización."
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Status 200', function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "pm.test('Returns array', function () {",
+                  "    var json = pm.response.json();",
+                  "    pm.expect(json).to.have.property('prompts');",
+                  "    pm.expect(json).to.have.property('count');",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Get Prompt",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/v1/prompts/sales-assistant?organization=acme-corp",
+              "host": ["{{base_url}}"],
+              "path": ["api", "v1", "prompts", "sales-assistant"],
+              "query": [
+                {
+                  "key": "organization",
+                  "value": "acme-corp"
+                }
+              ]
+            },
+            "description": "Obtiene la versión activa de un prompt específico."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Prompt History",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/v1/prompts/sales-assistant/history?organization=acme-corp",
+              "host": ["{{base_url}}"],
+              "path": ["api", "v1", "prompts", "sales-assistant", "history"],
+              "query": [
+                {
+                  "key": "organization",
+                  "value": "acme-corp"
+                }
+              ]
+            },
+            "description": "Obtiene todas las versiones (activas e inactivas) de un prompt. Útil para auditoría y rollback."
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Prompt",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/v1/prompts/sales-assistant?organization=acme-corp",
+              "host": ["{{base_url}}"],
+              "path": ["api", "v1", "prompts", "sales-assistant"],
+              "query": [
+                {
+                  "key": "organization",
+                  "value": "acme-corp"
+                }
+              ]
+            },
+            "description": "Soft-delete: desactiva todas las versiones del prompt."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "🤖 Agents",
+      "item": [
+        {
+          "name": "Create Researcher Agent",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"agent_id\": \"researcher\",\n  \"organization\": \"acme-corp\",\n  \"name\": \"Investigador\",\n  \"description\": \"Busca y sintetiza información de la base de conocimiento\",\n  \"prompt_id\": \"researcher-prompt\",\n  \"model\": \"grok-3\",\n  \"max_iterations\": 5,\n  \"tools\": \"[\\\"search_knowledge\\\"]\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/agents",
+              "host": ["{{base_url}}"],
+              "path": ["api", "v1", "agents"]
+            },
+            "description": "Crea el sub-agente researcher que usa Grok para investigación rápida."
+          },
+          "response": []
+        },
+        {
+          "name": "Create Coder Agent",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"agent_id\": \"coder\",\n  \"organization\": \"acme-corp\",\n  \"name\": \"Desarrollador\",\n  \"description\": \"Analiza y escribe código\",\n  \"prompt_id\": \"coder-prompt\",\n  \"model\": \"gemini-2.5-pro\",\n  \"max_iterations\": 8,\n  \"tools\": \"[\\\"run_script\\\"]\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/agents",
+              "host": ["{{base_url}}"],
+              "path": ["api", "v1", "agents"]
+            },
+            "description": "Crea el sub-agente coder que usa Gemini para análisis de código."
+          },
+          "response": []
+        },
+        {
+          "name": "Create Orchestrator Agent",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"agent_id\": \"main\",\n  \"organization\": \"acme-corp\",\n  \"name\": \"Orquestador Principal\",\n  \"description\": \"Analiza solicitudes y delega a sub-agentes especializados\",\n  \"prompt_id\": \"master-orchestrator\",\n  \"model\": \"gemini-2.5-pro\",\n  \"max_iterations\": 10,\n  \"tools\": \"[\\\"search_knowledge\\\"]\",\n  \"sub_agents\": \"[\\\"researcher\\\", \\\"coder\\\"]\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/agents",
+              "host": ["{{base_url}}"],
+              "path": ["api", "v1", "agents"]
+            },
+            "description": "Crea el agente orquestador principal que puede delegar a researcher y coder."
+          },
+          "response": []
+        },
+        {
+          "name": "List Agents",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/v1/agents?organization=acme-corp",
+              "host": ["{{base_url}}"],
+              "path": ["api", "v1", "agents"],
+              "query": [
+                {
+                  "key": "organization",
+                  "value": "acme-corp"
+                }
+              ]
+            },
+            "description": "Lista todos los agentes activos de la organización."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Agent",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/v1/agents/main?organization=acme-corp",
+              "host": ["{{base_url}}"],
+              "path": ["api", "v1", "agents", "main"],
+              "query": [
+                {
+                  "key": "organization",
+                  "value": "acme-corp"
+                }
+              ]
+            },
+            "description": "Obtiene la definición de un agente específico."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "💬 Chat",
+      "item": [
+        {
+          "name": "Chat Stream (Simple)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "text/event-stream"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"thread_id\": \"550e8400-e29b-41d4-a716-446655440000\",\n  \"message\": \"Hola, ¿cómo estás?\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/chat/stream",
+              "host": ["{{base_url}}"],
+              "path": ["api", "v1", "chat", "stream"]
+            },
+            "description": "Chat simple sin prompt dinámico ni agente. Usa el prompt por defecto."
+          },
+          "response": []
+        },
+        {
+          "name": "Chat Stream (con Prompt)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "text/event-stream"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"thread_id\": \"550e8400-e29b-41d4-a716-446655440001\",\n  \"message\": \"¿Qué productos tienen disponibles para el sector retail?\",\n  \"prompt_id\": \"sales-assistant\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/chat/stream",
+              "host": ["{{base_url}}"],
+              "path": ["api", "v1", "chat", "stream"]
+            },
+            "description": "Chat usando un prompt dinámico (`sales-assistant`) cargado desde el store."
+          },
+          "response": []
+        },
+        {
+          "name": "Chat Stream (con Agente)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "text/event-stream"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"thread_id\": \"550e8400-e29b-41d4-a716-446655440002\",\n  \"message\": \"Investiga cómo funciona el patrón MCP y dame un ejemplo en Go\",\n  \"agent_id\": \"main\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/chat/stream",
+              "host": ["{{base_url}}"],
+              "path": ["api", "v1", "chat", "stream"]
+            },
+            "description": "Chat usando el agente orquestador, que puede delegar a sub-agentes (researcher, coder)."
+          },
+          "response": []
+        },
+        {
+          "name": "Chat Stream (con Attachments)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "text/event-stream"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"thread_id\": \"550e8400-e29b-41d4-a716-446655440003\",\n  \"message\": \"Resume este documento y extrae los puntos clave\",\n  \"attachments\": [\n    {\n      \"filename\": \"informe_q1.txt\",\n      \"content\": \"Informe Q1 2026: Las ventas crecieron un 23% respecto al trimestre anterior. Los principales drivers fueron el mercado B2B (60%) y el canal digital (40%). Se identificaron 3 áreas de mejora: tiempos de entrega, soporte post-venta, y pricing del tier enterprise.\"\n    }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/chat/stream",
+              "host": ["{{base_url}}"],
+              "path": ["api", "v1", "chat", "stream"]
+            },
+            "description": "Chat con documentos efímeros adjuntos (estrategia Discord). Se inyectan como contexto y se desechan."
+          },
+          "response": []
+        },
+        {
+          "name": "Chat Stream (Sin Token — 401)",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"thread_id\": \"550e8400-e29b-41d4-a716-446655440000\",\n  \"message\": \"Esto debería fallar\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/chat/stream",
+              "host": ["{{base_url}}"],
+              "path": ["api", "v1", "chat", "stream"]
+            },
+            "description": "Test de seguridad: request sin JWT debe devolver 401."
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Status 401 Unauthorized', function () {",
+                  "    pm.response.to.have.status(401);",
+                  "});",
+                  "",
+                  "pm.test('Generic error', function () {",
+                  "    var json = pm.response.json();",
+                  "    pm.expect(json.error).to.eql('unauthorized');",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "🔗 Webhooks",
+      "item": [
+        {
+          "name": "Send Webhook",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-Webhook-Signature",
+                "value": "your-hmac-sha256-signature-here",
+                "description": "HMAC-SHA256 of the body using WEBHOOK_SECRET"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"event\": \"payment.completed\",\n  \"data\": {\n    \"tenant_id\": \"acme-corp\",\n    \"amount\": 150.00,\n    \"currency\": \"USD\"\n  }\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/webhooks",
+              "host": ["{{base_url}}"],
+              "path": ["api", "v1", "webhooks"]
+            },
+            "description": "Envía un webhook. Requiere firma HMAC-SHA256 en el header X-Webhook-Signature."
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
