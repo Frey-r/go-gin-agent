@@ -21,3 +21,11 @@ Thumbs.db
 
 # Logs
 logs/
+
+# Seed (contains credentials)
+seed.exe
+seed/
+
+# Service scripts
+install-service.ps1
+uninstall-service.ps1
