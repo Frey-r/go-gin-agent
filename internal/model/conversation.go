@@ -16,9 +16,10 @@ type ConversationMessage struct {
 
 // ChatRequest is the payload for POST /api/v1/chat/stream.
 type ChatRequest struct {
-	ThreadID string   `json:"thread_id" validate:"required,uuid"`
-	Message  string   `json:"message" validate:"required,min=1,max=32000"`
-	// Attachments are optional text files injected as context (ephemeral strategy).
+	ThreadID    string       `json:"thread_id" validate:"required,uuid"`
+	Message     string       `json:"message" validate:"required,min=1,max=32000"`
+	AgentID     string       `json:"agent_id,omitempty"`
+	Model       string       `json:"model,omitempty"`
 	Attachments []Attachment `json:"attachments,omitempty" validate:"max=5,dive"`
 }
 

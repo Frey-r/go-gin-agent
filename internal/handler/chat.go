@@ -44,50 +44,61 @@ func (h *ChatHandler) Stream(c *gin.Context) {
 		return
 	}
 
-	// Extract identity from JWT context (set by auth middleware)
+	// Extract identity from JWT context (set by auth middleware).
 	tenantID := c.GetString("tenant_id")
 	userID := c.GetString("user_id")
 
-	// Set SSE headers — must happen BEFORE any write
+	// Set SSE headers — must happen BEFORE any write.
 	c.Header("Content-Type", "text/event-stream")
 	c.Header("Cache-Control", "no-cache")
 	c.Header("Connection", "keep-alive")
 	c.Header("X-Accel-Buffering", "no") // bypass proxy buffering
 
-	// Create context with timeout
-	ctx, cancel := c.Request.Context(), func() {}
+	// Derive a context that is bounded by the per-request timeout.
+	ctx := c.Request.Context()
+	var cancel context.CancelFunc
 	if h.timeout > 0 {
-		ctx, cancel = contextWithTimeout(c.Request.Context(), h.timeout)
+		ctx, cancel = context.WithTimeout(ctx, h.timeout)
+		defer cancel()
 	}
-	defer cancel()
 
-	// Run the orchestrator
+	// Run the orchestrator with the timeout-bounded context.
 	params := service.RunParams{
 		TenantID:    tenantID,
 		UserID:      userID,
 		ThreadID:    req.ThreadID,
 		Message:     req.Message,
 		Attachments: req.Attachments,
-		Model:       "", // uses default from fabric
+		AgentID:     req.AgentID,
+		Model:       req.Model,
 	}
 
 	eventCh := h.orchestrator.Run(ctx, params)
 
-	// Stream events to client
+	// Stream events to client. Each event is marshaled as a JSON string
+	// and emitted as an SSE "data:" line. Events are flushed immediately
+	// so the client receives tokens as they arrive.
 	c.Stream(func(w io.Writer) bool {
 		event, ok := <-eventCh
 		if !ok {
-			return false // channel closed
+			return false // channel closed — stream complete
 		}
 
-		data, _ := json.Marshal(event.Data)
+		data, err := json.Marshal(event.Data)
+		if err != nil {
+			// Defensive: emit a structured error instead of silently
+			// dropping the event or sending malformed JSON.
+			data, _ = json.Marshal(map[string]string{
+				"error": "internal: failed to marshal event data",
+			})
+		}
+
 		c.SSEvent(event.Event, string(data))
-		c.Writer.Flush()
+		if flushErr := c.Writer.Flush(); flushErr != nil {
+			// Client disconnected; the orchestrator will eventually
+			// terminate via its context cancellation.
+			return false
+		}
 		return true
 	})
-}
-
-// contextWithTimeout is a helper that wraps context.WithTimeout.
-func contextWithTimeout(parent context.Context, timeout time.Duration) (context.Context, context.CancelFunc) {
-	return context.WithTimeout(parent, timeout)
 }

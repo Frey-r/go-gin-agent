@@ -4,6 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"slices"
 
 	"github.com/rs/zerolog/log"
 
@@ -13,7 +14,17 @@ import (
 	"github.com/ebachmann/go-gin-agent/internal/tools"
 )
 
-const maxReasoningIterations = 10
+const defaultMaxIterations = 10
+
+// resolvedConfig holds agent-derived data that must be computed before
+// the reasoning-loop goroutine starts, so that getToolDefs and
+// buildMessages operate with the correct per-agent context.
+type resolvedConfig struct {
+	Agent        *model.AgentDef // nil if no agent was resolved
+	ToolNames    []string        // tool names from AgentDef.Tools (JSON); empty means "all registered"
+	SystemPrompt string          // resolved system prompt
+	Model        string          // resolved model name
+}
 
 // Orchestrator manages the reasoning loop: context rehidration, LLM calls,
 // tool dispatch, and response streaming.
@@ -49,9 +60,9 @@ type RunParams struct {
 	ThreadID    string
 	Message     string
 	Attachments []model.Attachment
-	Model       string // which LLM model to use
-	PromptID    string // dynamic prompt to use (resolved from store)
-	AgentID     string // agent to run (resolved from store)
+	Model       string // which LLM model to use; resolved from agent if empty
+	PromptID    string // dynamic prompt to use; resolved from agent if empty
+	AgentID     string // agent to run; triggers full config resolution from DB
 }
 
 // Run executes the full reasoning loop and returns a channel of SSE events.
@@ -59,23 +70,104 @@ type RunParams struct {
 func (o *Orchestrator) Run(ctx context.Context, params RunParams) <-chan model.SSEvent {
 	eventCh := make(chan model.SSEvent, 64)
 
+	// Resolve agent config BEFORE the goroutine so that getToolDefs
+	// has the correct per-agent tool list and the system prompt.
+	cfg := o.resolveConfig(ctx, params)
+
+	// If model is still empty at this point, let the fabric apply its fallback.
+	if cfg.Model == "" {
+		cfg.Model = params.Model
+	}
+
 	go func() {
 		defer close(eventCh)
-		o.executeLoop(ctx, params, eventCh)
+		o.executeLoop(ctx, params, cfg, eventCh)
 	}()
 
 	return eventCh
 }
 
-func (o *Orchestrator) executeLoop(ctx context.Context, params RunParams, eventCh chan<- model.SSEvent) {
-	// 1. Get the LLM provider via fabric
-	provider, err := o.fabric.GetProvider(params.Model)
+// resolveConfig loads the agent definition, resolves the system prompt,
+// and parses the agent's tool list. All of this happens synchronously
+// in Run before the goroutine is spawned.
+func (o *Orchestrator) resolveConfig(ctx context.Context, params RunParams) resolvedConfig {
+	cfg := resolvedConfig{Model: params.Model}
+
+	if params.AgentID == "" || o.promptStore == nil {
+		// No agent requested — resolve prompt only if PromptID is set.
+		cfg.SystemPrompt = params.PromptID
+		if cfg.SystemPrompt != "" {
+			cfg.SystemPrompt = o.resolveSystemPrompt(ctx, cfg.SystemPrompt, params.TenantID)
+		}
+		if cfg.SystemPrompt == "" {
+			cfg.SystemPrompt = "Eres un asistente de IA especializado. Responde de forma precisa y útil."
+		}
+		return cfg
+	}
+
+	agent, err := o.promptStore.GetActiveAgent(ctx, params.AgentID, params.TenantID)
 	if err != nil {
-		eventCh <- model.SSEvent{Event: "error", Data: "model not available"}
+		log.Error().Err(err).Str("agent_id", params.AgentID).Msg("failed to load agent definition")
+		// Fall through with empty agent; use whatever params were given directly.
+		cfg.SystemPrompt = o.resolveSystemPrompt(ctx, params.PromptID, params.TenantID)
+		if cfg.SystemPrompt == "" {
+			cfg.SystemPrompt = "Eres un asistente de IA especializado. Responde de forma precisa y útil."
+		}
+		return cfg
+	}
+
+	cfg.Agent = agent
+
+	// Model: explicit param overrides agent default.
+	if cfg.Model == "" {
+		cfg.Model = agent.Model
+	}
+
+	// System prompt: resolve from agent's PromptID.
+	cfg.SystemPrompt = o.resolveSystemPrompt(ctx, agent.PromptID, params.TenantID)
+	if cfg.SystemPrompt == "" {
+		cfg.SystemPrompt = "Eres un asistente de IA especializado. Responde de forma precisa y útil."
+	}
+
+	// Parse the Tools JSON array from the agent definition.
+	if agent.Tools != nil && *agent.Tools != "" {
+		if err := json.Unmarshal([]byte(*agent.Tools), &cfg.ToolNames); err != nil {
+			log.Warn().Err(err).Str("agent_id", params.AgentID).Msg("failed to parse agent tools JSON; defaulting to all registered tools")
+			cfg.ToolNames = nil // nil means "all registered tools"
+		}
+	}
+
+	log.Info().
+		Str("agent_id", params.AgentID).
+		Str("model", cfg.Model).
+		Int("tool_count", len(cfg.ToolNames)).
+		Msg("resolved agent configuration")
+
+	return cfg
+}
+
+// resolveSystemPrompt fetches the prompt content for the given promptID and org.
+// Returns the empty string if the prompt cannot be resolved.
+func (o *Orchestrator) resolveSystemPrompt(ctx context.Context, promptID, org string) string {
+	if promptID == "" || o.promptStore == nil {
+		return ""
+	}
+	p, err := o.promptStore.GetActivePrompt(ctx, promptID, org)
+	if err != nil || p == nil {
+		return ""
+	}
+	return p.Content
+}
+
+func (o *Orchestrator) executeLoop(ctx context.Context, params RunParams, cfg resolvedConfig, eventCh chan<- model.SSEvent) {
+	// 1. Get LLM provider.
+	provider, err := o.fabric.GetProvider(cfg.Model)
+	if err != nil {
+		eventCh <- model.SSEvent{Event: "error", Data: fmt.Sprintf("model not available: %s", cfg.Model)}
 		return
 	}
 
-	// 2. Rehidrate conversation history
+	// 2. Rehidrate conversation history.
 	history, err := o.convStore.GetHistory(ctx, params.ThreadID, 20)
 	if err != nil {
 		log.Error().Err(err).Str("thread_id", params.ThreadID).Msg("failed to get history")
@@ -83,17 +175,26 @@ func (o *Orchestrator) executeLoop(ctx context.Context, params RunParams, eventC
 		return
 	}
 
-	// 3. Build messages array
-	messages := o.buildMessages(history, params)
+	// 3. Build messages with the pre-resolved system prompt.
+	messages := o.buildMessages(ctx, history, params, cfg.SystemPrompt)
 
-	// 4. Get tool definitions
-	toolDefs := o.getToolDefs()
+	// 4. Get tool definitions filtered to the agent's allowed tools.
+	toolDefs := o.getToolDefs(cfg.ToolNames)
+	if len(toolDefs) > 0 {
+		eventCh <- model.SSEvent{Event: "status", Data: fmt.Sprintf("Herramientas activas: %d", len(toolDefs))}
+	}
 
-	// 5. Reasoning loop
+	// 5. Determine iteration limit.
+	maxIterations := defaultMaxIterations
+	if cfg.Agent != nil && cfg.Agent.MaxIterations > 0 {
+		maxIterations = cfg.Agent.MaxIterations
+	}
+
+	// 6. Reasoning loop.
 	var fullResponse string
 	var totalInputTokens, totalOutputTokens int
 
-	for i := 0; i < maxReasoningIterations; i++ {
+	for i := 0; i < maxIterations; i++ {
 		select {
 		case <-ctx.Done():
 			eventCh <- model.SSEvent{Event: "error", Data: "request timeout"}
@@ -121,7 +222,9 @@ func (o *Orchestrator) executeLoop(ctx context.Context, params RunParams, eventC
 			case llm.EventToolCall:
 				hasToolCalls = true
 				iterationToolCalls = append(iterationToolCalls, event.ToolCalls...)
-				eventCh <- model.SSEvent{Event: "status", Data: fmt.Sprintf("Ejecutando herramienta: %s", event.ToolCalls[0].Name)}
+				for _, tc := range event.ToolCalls {
+					eventCh <- model.SSEvent{Event: "status", Data: fmt.Sprintf("Ejecutando herramienta: %s", tc.Name)}
+				}
 
 			case llm.EventDone:
 				totalInputTokens += event.InputTokens
@@ -134,18 +237,18 @@ func (o *Orchestrator) executeLoop(ctx context.Context, params RunParams, eventC
 		}
 
 		if hasToolCalls {
-			// Append assistant message with tool calls
+			// Append assistant message with tool calls.
 			messages = append(messages, llm.Message{
 				Role:    llm.RoleAssistant,
 				Content: iterationContent,
 			})
 
-			// Execute each tool and append results
+			// Execute each tool and append results.
 			for _, tc := range iterationToolCalls {
 				result, err := o.toolReg.Execute(ctx, tc.Name, tc.Arguments)
 				if err != nil {
-					result = fmt.Sprintf("Error executing tool %s: %s", tc.Name, err.Error())
-					log.Error().Err(err).Str("tool", tc.Name).Msg("tool execution failed")
+					result = fmt.Sprintf(`{"error": "tool %q execution failed: %s"}`, tc.Name, err.Error())
+					log.Error().Err(err).Str("tool", tc.Name).Int("iteration", i).Msg("tool execution failed")
 				}
 				messages = append(messages, llm.Message{
 					Role:       llm.RoleTool,
@@ -154,55 +257,58 @@ func (o *Orchestrator) executeLoop(ctx context.Context, params RunParams, eventC
 				})
 			}
 
-			// Continue loop — the LLM needs to process tool results
+			// Continue loop — the LLM processes tool results.
 			continue
 		}
 
-		// No tool calls — we have the final response
+		// No tool calls — final response.
 		fullResponse = iterationContent
 		break
 	}
 
-	// 6. Persist messages
+	if fullResponse == "" && maxIterations > 0 {
+		log.Warn().Int("iterations", maxIterations).Msg("reasoning loop exited with no response")
+	}
+
+	// 7. Persist messages.
 	o.persistExchange(ctx, params, fullResponse)
 
-	// 7. Send done event
+	// 8. Send done event.
 	eventCh <- model.SSEvent{Event: "done", Data: map[string]interface{}{
-		"input_tokens":  totalInputTokens,
+		"input_tokens":   totalInputTokens,
 		"output_tokens": totalOutputTokens,
-		"model":         params.Model,
+		"model":          cfg.Model,
+		"agent_id":       params.AgentID,
 	}}
 
-	// 8. Async telemetry
+	// 9. Async telemetry.
 	if o.telemetry != nil {
 		o.telemetry.ReportAsync(TraceData{
 			TenantID:     params.TenantID,
 			UserID:       params.UserID,
 			ThreadID:     params.ThreadID,
-			Model:        params.Model,
+			Model:        cfg.Model,
 			InputTokens:  totalInputTokens,
 			OutputTokens: totalOutputTokens,
 		})
 	}
 }
 
-func (o *Orchestrator) buildMessages(history []model.ConversationMessage, params RunParams) []llm.Message {
+// buildMessages assembles the message list for the LLM.
+// It accepts the already-resolved system prompt so that it does not
+// need to derive a context for store lookups.
+func (o *Orchestrator) buildMessages(ctx context.Context, history []model.ConversationMessage, params RunParams, systemPrompt string) []llm.Message {
 	messages := make([]llm.Message, 0, len(history)+3)
 
-	// System prompt — resolve dynamically from store, fallback to default
-	systemPrompt := "Eres un asistente de IA especializado. Responde de forma precisa y útil."
-	if params.PromptID != "" && o.promptStore != nil {
-		org := params.TenantID
-		if p, err := o.promptStore.GetActivePrompt(context.Background(), params.PromptID, org); err == nil && p != nil {
-			systemPrompt = p.Content
-		}
+	// System prompt — already resolved by resolveConfig.
+	if systemPrompt != "" {
+		messages = append(messages, llm.Message{
+			Role:    llm.RoleSystem,
+			Content: systemPrompt,
+		})
 	}
-	messages = append(messages, llm.Message{
-		Role:    llm.RoleSystem,
-		Content: systemPrompt,
-	})
 
-	// History
+	// Conversation history.
 	for _, msg := range history {
 		messages = append(messages, llm.Message{
 			Role:    msg.Role,
@@ -210,7 +316,7 @@ func (o *Orchestrator) buildMessages(history []model.ConversationMessage, params
 		})
 	}
 
-	// Ephemeral attachments (injected as user context)
+	// Ephemeral attachments injected as user context.
 	if len(params.Attachments) > 0 {
 		var attachContent string
 		for _, att := range params.Attachments {
@@ -222,7 +328,7 @@ func (o *Orchestrator) buildMessages(history []model.ConversationMessage, params
 		})
 	}
 
-	// User message
+	// User message.
 	messages = append(messages, llm.Message{
 		Role:    llm.RoleUser,
 		Content: params.Message,
@@ -231,14 +337,33 @@ func (o *Orchestrator) buildMessages(history []model.ConversationMessage, params
 	return messages
 }
 
-func (o *Orchestrator) getToolDefs() []llm.ToolDef {
-	names := o.toolReg.List()
-	if len(names) == 0 {
+// getToolDefs returns tool definitions filtered to the names in toolNames.
+// If toolNames is nil or empty, all registered tools are returned.
+func (o *Orchestrator) getToolDefs(toolNames []string) []llm.ToolDef {
+	registered := o.toolReg.List()
+	if len(registered) == 0 {
 		return nil
 	}
 
-	// For now, return basic tool definitions
-	// TODO: tools should self-describe their schemas
+	// If the agent specified an explicit list, intersect with registered tools.
+	// This ensures we never surface a tool the registry doesn't know about.
+	var names []string
+	if len(toolNames) > 0 {
+		// Sort both slices for deterministic O(n+m) intersection.
+		slices.Sort(registered)
+		slices.Sort(toolNames)
+		names = intersectSorted(registered, toolNames)
+		if len(names) == 0 {
+			log.Debug().Msg("agent tool list does not match any registered tools")
+			return nil
+		}
+	} else {
+		names = registered
+	}
+
+	// TODO: tools should self-describe their parameter schemas instead of
+	// returning an empty Parameters object. When that is implemented,
+	// replace this generic loop with a per-tool lookup.
 	defs := make([]llm.ToolDef, 0, len(names))
 	for _, name := range names {
 		defs = append(defs, llm.ToolDef{
@@ -253,8 +378,25 @@ func (o *Orchestrator) getToolDefs() []llm.ToolDef {
 	return defs
 }
 
+// intersectSorted returns the set intersection of two sorted string slices.
+func intersectSorted(a, b []string) []string {
+	var result []string
+	i, j := 0, 0
+	for i < len(a) && j < len(b) {
+		if a[i] < b[j] {
+			i++
+		} else if a[i] > b[j] {
+			j++
+		} else {
+			result = append(result, a[i])
+			i++
+			j++
+		}
+	}
+	return result
+}
+
 func (o *Orchestrator) persistExchange(ctx context.Context, params RunParams, response string) {
-	// Save user message
 	userMsg := &model.ConversationMessage{
 		ThreadID: params.ThreadID,
 		TenantID: params.TenantID,
@@ -266,7 +408,6 @@ func (o *Orchestrator) persistExchange(ctx context.Context, params RunParams, re
 		log.Error().Err(err).Msg("failed to persist user message")
 	}
 
-	// Save assistant response
 	if response != "" {
 		assistantMsg := &model.ConversationMessage{
 			ThreadID: params.ThreadID,
@@ -279,10 +420,4 @@ func (o *Orchestrator) persistExchange(ctx context.Context, params RunParams, re
 			log.Error().Err(err).Msg("failed to persist assistant message")
 		}
 	}
-}
-
-// getToolDefsJSON is a helper for serializing tool definitions if needed.
-func getToolDefsJSON(defs []llm.ToolDef) string {
-	b, _ := json.Marshal(defs)
-	return string(b)
 }
