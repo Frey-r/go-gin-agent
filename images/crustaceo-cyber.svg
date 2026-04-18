@@ -1,0 +1,42 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00ff88"/>
+      <stop offset="50%" stop-color="#0088ff"/>
+      <stop offset="100%" stop-color="#000044"/>
+    </radialGradient>
+    <filter id="neon">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#00ff88" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" fill="#0a0a1a"/>
+  <g filter="url(#neon)">
+    <!-- Body cyber crab -->
+    <ellipse cx="256" cy="280" rx="140" ry="100" fill="#1a1a3a" stroke="#00ff88" stroke-width="4"/>
+    <circle cx="256" cy="240" r="60" fill="#003366" stroke="#00ff88" stroke-width="3"/>
+    <!-- Eyes -->
+    <circle cx="230" cy="220" r="18" fill="#ffaa00" stroke="#ff4400" stroke-width="2"/>
+    <circle cx="282" cy="220" r="18" fill="#ffaa00" stroke="#ff4400" stroke-width="2"/>
+    <circle cx="230" cy="220" r="8" fill="#ff0000"/>
+    <circle cx="282" cy="220" r="8" fill="#ff0000"/>
+    <!-- Claws cyber -->
+    <path d="M120 280 Q80 250 60 300 Q80 350 120 320" fill="#2a2a5a" stroke="#00ff88" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M60 300 L40 290 L60 310 Z" fill="#00ff88"/>
+    <path d="M392 280 Q432 250 452 300 Q432 350 392 320" fill="#2a2a5a" stroke="#00ff88" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M452 300 L472 290 L452 310 Z" fill="#00ff88"/>
+    <!-- Legs cyber -->
+    <path d="M180 360 L160 400 L140 380" fill="none" stroke="#00aaff" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="140" cy="380" r="8" fill="#00ff88"/>
+    <path d="M220 360 L240 400 L260 380" fill="none" stroke="#00aaff" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="260" cy="380" r="8" fill="#00ff88"/>
+    <path d="M292 360 L272 400 L252 380" fill="none" stroke="#00aaff" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="252" cy="380" r="8" fill="#00ff88"/>
+    <path d="M332 360 L352 400 L372 380" fill="none" stroke="#00aaff" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="372" cy="380" r="8" fill="#00ff88"/>
+    <!-- Cyber antennas -->
+    <path d="M200 180 Q220 140 256 160 Q280 140 300 180" fill="none" stroke="#ffaa00" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="256" cy="160" r="12" fill="#ff4400"/>
+    <circle cx="256" cy="160" r="6" fill="#ffff00" filter="url(#neon)"/>
+    <text x="256" y="500" font-family="monospace" font-size="24" fill="#00ff88" text-anchor="middle">🦀 CRUSTACEO</text>
+  </g>
+</svg>

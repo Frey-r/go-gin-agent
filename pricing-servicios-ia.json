@@ -1,0 +1,17 @@
+{
+  \"setup\": {
+    \"medio\": {\"uf\": 19, \"tiempo_semanas\": \"2-3\", \"alcance\": \"Integración CRM/ERP, datos estructurados, 1 interacción\"},
+    \"alto\": {\"uf\": 29, \"tiempo_semanas\": \"3-5\", \"alcance\": \"GraphRAG, validación legal, integraciones complejas\"}
+  },
+  \"cloud_mensual\": {
+    \"starter\": {\"uf\": 2.5},
+    \"advanced\": {\"uf\": 7.5},
+    \"premium\": {\"uf\": 20}
+  },
+  \"onpremise\": {
+    \"mantenimiento\": {\"uf\": 15},
+    \"ia_local\": {\"uf\": 0}
+  },
+  \"notas\": \"Excedentes: costo real +20%. UF ~35k CLP. Custom coding extra.\",
+  \"fecha\": \"2026-04-02\"
+}

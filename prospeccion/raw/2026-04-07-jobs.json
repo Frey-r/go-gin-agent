@@ -1,0 +1,2178 @@
+[
+  {
+    "title": "Vendedor(a) Part Time 20 hrs - Apumanque",
+    "company": "Mobile Outfitters",
+    "location": "Las Condes, Regi\u00f3n Metropolitana",
+    "url": "https://indeed.com/viewjob?jk=456789abcdef0123",
+    "source": "Indeed",
+    "scraped_at": "2026-04-07T14:22:44.636491+00:00"
+  },
+  {
+    "title": "Senior Full-Stack Engineer React y Node.js Full time",
+    "company": "Senior Full-Stack Engineer React y Node.js",
+    "location": "Santiago (In-office)",
+    "url": "https://www.getonbrd.com/jobs/programming/senior-fullstack-engineer-react-y-node-js-tcit-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:00.266524+00:00"
+  },
+  {
+    "title": "Senior Site Reliability Engineer (SRE) AWS Full time",
+    "company": "Senior Site Reliability Engineer (SRE) AWS",
+    "location": "Remote (Chile)",
+    "url": "https://www.getonbrd.com/jobs/sysadmin-devops-qa/senior-site-reliability-engineer-sre-aws-maxxa-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:00.475056+00:00"
+  },
+  {
+    "title": "Cloud Migration Engineer Full time",
+    "company": "Cloud Migration Engineer",
+    "location": "Santiago \u00a0 Lima (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/sysadmin-devops-qa/cloud-migration-engineer-whitestack-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:00.500996+00:00"
+  },
+  {
+    "title": "Ingeniero DevOps / Ingl\u00e9s Avanzado Full time",
+    "company": "Ingeniero DevOps / Ingl\u00e9s Avanzado",
+    "location": "Remote (Chile)",
+    "url": "https://www.getonbrd.com/jobs/sysadmin-devops-qa/ingeniero-devops-ingles-avanzado-tcit-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:00.578610+00:00"
+  },
+  {
+    "title": "Especialista en Calidad (Ing. Civil El\u00e9ctrico o Inform\u00e1tico) Full time",
+    "company": "Especialista en Calidad (Ing. Civil El\u00e9ctrico o Inform\u00e1tico)",
+    "location": "Santiago (In-office)",
+    "url": "https://www.getonbrd.com/jobs/sysadmin-devops-qa/ing-civil-informatico-electronico-electrico-o-telematico-bc-global-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:00.766044+00:00"
+  },
+  {
+    "title": "Data Consultant Full time",
+    "company": "Data Consultant",
+    "location": "Bogot\u00e1 \u00a0 Santiago \u00a0 Ciudad de M\u00e9xico (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/data-science-analytics/data-consultant-artefact-latam-bogota-santiago-ciudad-de-mexico",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:00.920250+00:00"
+  },
+  {
+    "title": "Ingeniero de Datos Full time",
+    "company": "Ingeniero de Datos",
+    "location": "Remote (Chile)",
+    "url": "https://www.getonbrd.com/jobs/data-science-analytics/ingeniero-de-datos-devaid-remote-41ba",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:00.976124+00:00"
+  },
+  {
+    "title": "Data Platform Engineer Full time",
+    "company": "Data Platform Engineer",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/jobs/data-science-analytics/data-platform-engineer-intune-analytics-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:01.003508+00:00"
+  },
+  {
+    "title": "Enterprise Customer Success & Onboarding PM Full time\ud83d\ude80 RESPONDE R\u00c1PIDO",
+    "company": "Enterprise Customer Success & Onboarding PM",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/jobs/innovacion-agilidad/enterprise-customer-success-onboarding-pm-elevateos-remote-6000",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:01.185704+00:00"
+  },
+  {
+    "title": "Technical Product Manager Full time",
+    "company": "Technical Product Manager",
+    "location": "Santiago (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/innovation-agile/technical-product-manager-icass-spa-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:01.402161+00:00"
+  },
+  {
+    "title": "Consultor de Implementaci\u00f3n Senior Full time",
+    "company": "Consultor de Implementaci\u00f3n Senior",
+    "location": "Lima (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/innovation-agile/consultor-de-implementacion-senior-talana-lima-d9e4",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:01.459601+00:00"
+  },
+  {
+    "title": "Account Manager Senior (Enterprise) Full time",
+    "company": "Account Manager Senior (Enterprise)",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/jobs/sales/sales-manager-account-manager-senior-enterprise-omnix-ai-corp-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:01.741595+00:00"
+  },
+  {
+    "title": "Mid Level Graphic Designer Full time",
+    "company": "Mid Level Graphic Designer",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/jobs/design-ux/mid-level-graphic-designer-everything-bagel-remote-b1b1",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:02.309952+00:00"
+  },
+  {
+    "title": "Product / UX Designer Full time",
+    "company": "Product / UX Designer",
+    "location": "Lima (Hybrid)",
+    "url": "https://www.getonbrd.com/empleos/diseno-ux/product-ux-designer-haystack-news-lima",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:02.370832+00:00"
+  },
+  {
+    "title": "Dise\u00f1ador UX/UI Full time",
+    "company": "Dise\u00f1ador UX/UI",
+    "location": "Ciudad de M\u00e9xico (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/design-ux/disenador-ux-ui-interfell-ciudad-de-mexico",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:02.433245+00:00"
+  },
+  {
+    "title": "Asistente de Back Office (Practicante) Full time\ud83d\ude80 RESPONDE R\u00c1PIDO",
+    "company": "Asistente de Back Office (Practicante)",
+    "location": "Remote (Chile)",
+    "url": "https://www.getonbrd.com/jobs/operations-management/asistente-de-back-office-practicante-patrimore-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:18:01.539407+00:00"
+  },
+  {
+    "title": "Customer Success Manager Senior \u2013 Cuentas Enterprise (B2B AI Full time",
+    "company": "Customer Success Manager Senior \u2013 Cuentas Enterprise (B2B AI",
+    "location": "Santiago (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/customer-support/customer-success-manager-senior-cuentas-enterprise-b2b-ai-omnix-ai-corp-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:02.616723+00:00"
+  },
+  {
+    "title": "Soporte en Big Data / Azure Data Full time",
+    "company": "Soporte en Big Data / Azure Data",
+    "location": "Remote (Peru)",
+    "url": "https://www.getonbrd.com/jobs/customer-support/consultor-semi-senior-en-big-data-azure-data-factor-it-remote-faa4",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:02.640709+00:00"
+  },
+  {
+    "title": "Agente de Customer Success Mx Full time",
+    "company": "Agente de Customer Success Mx",
+    "location": "Remote (Mexico)",
+    "url": "https://www.getonbrd.com/jobs/customer-support/agente-de-customer-success-mx-comunidadfeliz-remote-80bd",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:02.563256+00:00"
+  },
+  {
+    "title": "Customer Success Executive Full time",
+    "company": "Customer Success Executive",
+    "location": "Santiago (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/customer-support/customer-success-executive-yom-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:02.696127+00:00"
+  },
+  {
+    "title": "CRM Campaign Analyst Full time",
+    "company": "CRM Campaign Analyst",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/jobs/digital-marketing/crm-analyst-promarketing-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:05.164061+00:00"
+  },
+  {
+    "title": "Junior Growth Marketer (AI & Cloud Native) Full time",
+    "company": "Junior Growth Marketer (AI & Cloud Native)",
+    "location": "Santiago, Vi\u00f1a del Mar or Conc\u00f3n (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/digital-marketing/senior-digital-marketing-growth-lead-ai-design-b2b-e-omnix-ai-corp-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:05.192238+00:00"
+  },
+  {
+    "title": "Especialista en Marketing Digital, Relacionamiento y Fideliz Full time",
+    "company": "Especialista en Marketing Digital, Relacionamiento y Fideliz",
+    "location": "Santiago (In-office)",
+    "url": "https://www.getonbrd.com/jobs/digital-marketing/especialista-en-marketing-digital-relacionamiento-y-fideliz-dkohome-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:05.307204+00:00"
+  },
+  {
+    "title": "Ethical Hacker / Pentester Full time",
+    "company": "Ethical Hacker / Pentester",
+    "location": "Santiago (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/cybersecurity/ethical-hacker-pentester-bc-tecnologia-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:02.872497+00:00"
+  },
+  {
+    "title": "Ingeniero de Seguridad en la Nube Full time",
+    "company": "Ingeniero de Seguridad en la Nube",
+    "location": "Santiago (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/cybersecurity/ingeniero-de-seguridad-en-la-nube-zerviz-technologies-santiago-8463",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:02.814226+00:00"
+  },
+  {
+    "title": "Docente Ciberseguridad en Tec. en Cloud y Cont Full time\ud83d\udca4",
+    "company": "Docente Ciberseguridad en Tec. en Cloud y Cont",
+    "location": "Santiago (In-office)",
+    "url": "https://www.getonbrd.com/jobs/cybersecurity/docente-ciberseguridad-en-tec-en-cloud-y-cont-duoc-uc-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:02.964167+00:00"
+  },
+  {
+    "title": "Especialista en Seguridad Ofensiva Full time",
+    "company": "Especialista en Seguridad Ofensiva",
+    "location": "Santiago (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/cybersecurity/especialista-en-seguridad-ofensiva-queplan-cl-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:04.599427+00:00"
+  },
+  {
+    "title": "Ingeniero de Soporte Full time",
+    "company": "Ingeniero de Soporte",
+    "location": "Santiago (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/technical-support/ingeniero-de-soporte-coderslab-io-santiago-d428",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:05.686890+00:00"
+  },
+  {
+    "title": "Analista de Soporte Senior Pi System Aveva Full time",
+    "company": "Analista de Soporte Senior Pi System Aveva",
+    "location": "Remote (Chile)",
+    "url": "https://www.getonbrd.com/empleos/technical-support/analista-de-soporte-senior-pi-system-aveva-contac-ingenieros-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:05.919928+00:00"
+  },
+  {
+    "title": "Administrador Senior Kafka/Nifi (Latam) Full time",
+    "company": "Administrador Senior Kafka/Nifi (Latam)",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/empleos/technical-support/administrador-senior-kafka-nifi-latam-bc-tecnologia-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:05.742039+00:00"
+  },
+  {
+    "title": "Business Analyst (Digital Project Lead) Full time",
+    "company": "Business Analyst (Digital Project Lead)",
+    "location": "Santiago (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/technical-support/business-analyst-digital-project-lead-jr-witi-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:05.858785+00:00"
+  },
+  {
+    "title": "AI Engineer Senior Full time",
+    "company": "AI Engineer Senior",
+    "location": "Remote (6 locations)",
+    "url": "https://www.getonbrd.com/jobs/machine-learning-ai/ai-engineer-sr-azure-ai-microsoft-foundry-grupo-mariposa-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:05.423388+00:00"
+  },
+  {
+    "title": "Senior AI Engineer Full time",
+    "company": "Senior AI Engineer",
+    "location": "Remote (South America and Central America)",
+    "url": "https://www.getonbrd.com/jobs/machine-learning-ai/senior-ai-engineer-niuro-remote-3595",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:05.561287+00:00"
+  },
+  {
+    "title": "Desarrollador Mobile Flutter Full time",
+    "company": "Desarrollador Mobile Flutter",
+    "location": "Santiago (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/mobile-developer/desarrollador-mobile-flutter-hf-solutions-santiago-a192",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:06.018549+00:00"
+  },
+  {
+    "title": "Semi Senior Flutter Developer Full time",
+    "company": "Semi Senior Flutter Developer",
+    "location": "Remote (5 locations)",
+    "url": "https://www.getonbrd.com/empleos/desarrollo-mobile/semi-senior-flutter-developer-grupo-mariposa-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:06.045276+00:00"
+  },
+  {
+    "title": "Mobile Developer iOS (Swift) Full time\ud83d\udca4",
+    "company": "Mobile Developer iOS (Swift)",
+    "location": "Santiago (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/mobile-developer/mobile-developer-ios-swift-42labs-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:06.082121+00:00"
+  },
+  {
+    "title": "Desarrollador Mobile React Native Full time",
+    "company": "Desarrollador Mobile React Native",
+    "location": "Santiago (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/mobile-developer/desarrollador-mobile-react-native-cyd-tecnologia-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:06.108950+00:00"
+  },
+  {
+    "title": "Tech Lead Mobile Full time",
+    "company": "Tech Lead Mobile",
+    "location": "Santiago (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/mobile-developer/tech-lead-senior-mobile-hf-solutions-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:06.203134+00:00"
+  },
+  {
+    "title": "Desarrollador Full-Stack Mobile Full time",
+    "company": "Desarrollador Full-Stack Mobile",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/jobs/mobile-developer/desarrollador-full-stack-mobile-coderslab-io-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:06.240887+00:00"
+  },
+  {
+    "title": "Conversion Copywriter (Dtc Funnels) Full time",
+    "company": "Conversion Copywriter (Dtc Funnels)",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/jobs/advertising-media/conversion-copywriter-dtc-funnels-level-7-labs-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:06.352690+00:00"
+  },
+  {
+    "title": "Twitter/X Content Strategist Freelance",
+    "company": "Twitter/X Content Strategist",
+    "location": "Remote (Argentina)",
+    "url": "https://www.getonbrd.com/jobs/advertising-media/twitter-x-content-strategist-legalatoms-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:06.379522+00:00"
+  },
+  {
+    "title": "Reclutador TI Especialista en Perfiles SAP Full time",
+    "company": "Reclutador TI Especialista en Perfiles SAP",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/jobs/hr/reclutador-ti-sap-coderslab-io-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:06.973674+00:00"
+  },
+  {
+    "title": "Recruiting & Hiring Manager for Personal Services Full time",
+    "company": "Recruiting & Hiring Manager for Personal Services",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/empleos/recursos-humanos/recruiting-hiring-manager-elevateos-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:07.066235+00:00"
+  },
+  {
+    "title": "Analista de Gastos (Presencial) Full time",
+    "company": "Analista de Gastos (Presencial)",
+    "location": "Santiago (In-office)",
+    "url": "https://www.getonbrd.com/jobs/other/analista-de-gastos-presencial-bc-tecnologia-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:07.179453+00:00"
+  },
+  {
+    "title": "Soporte T\u00e9cnico Terreno Las Condes Full time",
+    "company": "Soporte T\u00e9cnico Terreno Las Condes",
+    "location": "Santiago (In-office)",
+    "url": "https://www.getonbrd.com/jobs/hardware-electronics/soporte-tecnico-terreno-las-condes-bc-tecnologia-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:07.314429+00:00"
+  },
+  {
+    "title": "Soporte T\u00e9cnico Terreno \u2013 Cctv Full time",
+    "company": "Soporte T\u00e9cnico Terreno \u2013 Cctv",
+    "location": "Santiago (In-office)",
+    "url": "https://www.getonbrd.com/jobs/hardware-electronics/soporte-tecnico-terreno-cctv-bc-tecnologia-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:07.395326+00:00"
+  },
+  {
+    "title": "DevOps Instructor Part time\ud83d\udca4",
+    "company": "DevOps Instructor",
+    "location": "Santiago (In-office)",
+    "url": "https://www.getonbrd.com/jobs/education-coaching/docente-intro-a-herramientas-devops-sede-alameda-j-d-duoc-uc-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:07.422082+00:00"
+  },
+  {
+    "title": "Online Tutor Full time",
+    "company": "Online Tutor",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/jobs/education-coaching/online-tutor-papaya-tutoring-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:07.449088+00:00"
+  },
+  {
+    "title": "Docente Full-Stack Iii Part time\ud83d\udca4",
+    "company": "Docente Full-Stack Iii",
+    "location": "Santiago (In-office)",
+    "url": "https://www.getonbrd.com/jobs/education-coaching/docente-fullstack-iii-duoc-uc-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:07.502792+00:00"
+  },
+  {
+    "title": "Senior C++ Developer for Audio Systems Full time",
+    "company": "Senior C++ Developer for Audio Systems",
+    "location": "Remote (Chile)",
+    "url": "https://www.getonbrd.com/jobs/programming/senior-c-developer-merapar-remote-8fc9",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:00.160420+00:00"
+  },
+  {
+    "title": "Databricks Administrator Full time",
+    "company": "Databricks Administrator",
+    "location": "Remote (5 locations)",
+    "url": "https://www.getonbrd.com/jobs/data-science-analytics/databricks-administrator-improving-south-america-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:00.808267+00:00"
+  },
+  {
+    "title": "Data Analyst (Azure + BI) Full time",
+    "company": "Data Analyst (Azure + BI)",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/jobs/data-science-analytics/data-analyst-azure-bi-asesoria-y-gestion-de-procesos-s-a-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:00.947269+00:00"
+  },
+  {
+    "title": "Head of Product Full time",
+    "company": "Head of Product",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/empleos/innovacion-agilidad/head-of-product-even-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:01.430167+00:00"
+  },
+  {
+    "title": "Ejecutivo/a Venta Software Lima Full time",
+    "company": "Ejecutivo/a Venta Software Lima",
+    "location": "Lima (In-office)",
+    "url": "https://www.getonbrd.com/jobs/sales/ejecutivo-a-venta-de-software-lima-bsale-lima-611a",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:01.770809+00:00"
+  },
+  {
+    "title": "Dise\u00f1ador/a UX/UI (Semi Senior) Full time",
+    "company": "Dise\u00f1ador/a UX/UI (Semi Senior)",
+    "location": "Guayaquil (In-office)",
+    "url": "https://www.getonbrd.com/jobs/design-ux/disenador-a-ux-ui-semi-senior-coderslab-io-guayaquil",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:02.228053+00:00"
+  },
+  {
+    "title": "UI Developer (HTML/CSS) Full time",
+    "company": "UI Developer (HTML/CSS)",
+    "location": "Santiago (In-office)",
+    "url": "https://www.getonbrd.com/empleos/diseno-ux/front-end-html-css-magnet-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:02.401718+00:00"
+  },
+  {
+    "title": "Productor Gr\u00e1fico Full time",
+    "company": "Productor Gr\u00e1fico",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/jobs/diseno-ux/productor-grafico-match-agencia-consultora-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:02.343202+00:00"
+  },
+  {
+    "title": "Analista de Onboarding (Contratos) Full time",
+    "company": "Analista de Onboarding (Contratos)",
+    "location": "Santiago (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/customer-support/analista-de-onboarding-contratos-equifax-chile-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:02.531734+00:00"
+  },
+  {
+    "title": "Paid Media (Freelance) Full time",
+    "company": "Paid Media (Freelance)",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/jobs/digital-marketing/paid-media-freelance-match-agencia-consultora-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:05.133627+00:00"
+  },
+  {
+    "title": "Growth Lead Full time",
+    "company": "Growth Lead",
+    "location": "Remote (Chile)",
+    "url": "https://www.getonbrd.com/jobs/marketing-digital/growth-lead-patrimore-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:05.047375+00:00"
+  },
+  {
+    "title": "Head of Marketing Peru Full time",
+    "company": "Head of Marketing Peru",
+    "location": "Lima (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/marketing-digital/head-of-marketing-peru-rankmi-lima",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:05.279693+00:00"
+  },
+  {
+    "title": "Arquitecto/a de Ciberseguridad Cloud Full time",
+    "company": "Arquitecto/a de Ciberseguridad Cloud",
+    "location": "Santiago (In-office)",
+    "url": "https://www.getonbrd.com/empleos/cybersecurity/arquitecto-a-de-ciberseguridad-cloud-zerviz-technologies-santiago-5984",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:02.785927+00:00"
+  },
+  {
+    "title": "Ingeniero Soporte en Redes y Telecomunicaciones (Tarapac\u00e1) Full time",
+    "company": "Ingeniero Soporte en Redes y Telecomunicaciones (Tarapac\u00e1)",
+    "location": "Iquique (In-office)",
+    "url": "https://www.getonbrd.com/empleos/technical-support/ingeniero-soporte-en-redes-y-telecomunicaciones-tarapaca-bc-tecnologia-iquique",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:05.830490+00:00"
+  },
+  {
+    "title": "AI Engineer Full time",
+    "company": "AI Engineer",
+    "location": "Puerto Montt, Santiago or Puerto Varas (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/machine-learning-ai/senior-ai-engineer-mas-analytics-puerto-montt-santiago-puerto-varas",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:05.590748+00:00"
+  },
+  {
+    "title": "Full-Stack Developer Freelance (React Native + AWS) Full time",
+    "company": "Full-Stack Developer Freelance (React Native + AWS)",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/jobs/desarrollo-mobile/fullstack-developer-freelance-react-native-aws-match-agencia-consultora-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:05.978189+00:00"
+  },
+  {
+    "title": "Mobile Development Specialist (Flutter) Full time",
+    "company": "Mobile Development Specialist (Flutter)",
+    "location": "Santiago (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/desarrollo-mobile/mobile-development-specialist-flutter-hf-solutions-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:06.136230+00:00"
+  },
+  {
+    "title": "Short Form Content & Meta Ads Operator Part time",
+    "company": "Short Form Content & Meta Ads Operator",
+    "location": "Remote (5 locations)",
+    "url": "https://www.getonbrd.com/jobs/advertising-media/short-form-content-meta-ads-operator-studio-prime-painting-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:06.877806+00:00"
+  },
+  {
+    "title": "Consultor de Remuneraciones Full time",
+    "company": "Consultor de Remuneraciones",
+    "location": "Santiago (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/hr/analista-de-remuneraciones-sac-talana-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:07.003013+00:00"
+  },
+  {
+    "title": "Ingeniero(a) en Prevenci\u00f3n de Riesgos (Plan Sst 2026) Full time",
+    "company": "Ingeniero(a) en Prevenci\u00f3n de Riesgos (Plan Sst 2026)",
+    "location": "Santiago (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/otra/ingeniero-a-en-prevencion-de-riesgos-plan-sst-2026-bc-tecnologia-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:07.217598+00:00"
+  },
+  {
+    "title": "Data Engineer Senior (AWS) Full time",
+    "company": "Data Engineer Senior (AWS)",
+    "location": "Remote (South America and Central America)",
+    "url": "https://www.getonbrd.com/empleos/data-science-analytics/data-engineer-senior-aws-coyanservices-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:00.833689+00:00"
+  },
+  {
+    "title": "Actuario Senior Full time",
+    "company": "Actuario Senior",
+    "location": "Santiago (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/data-science-analytics/actuario-senior-bnp-paribas-cardif-santiago-5399",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:00.893319+00:00"
+  },
+  {
+    "title": "Account Manager Per\u00fa Full time",
+    "company": "Account Manager Per\u00fa",
+    "location": "Lima (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/sales/account-manager-peru-factor-it-lima",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:01.656704+00:00"
+  },
+  {
+    "title": "Productor Gr\u00e1fico/Director de Arte Full time",
+    "company": "Productor Gr\u00e1fico/Director de Arte",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/jobs/diseno-ux/productor-grafico-director-de-arte-match-agencia-consultora-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:02.256762+00:00"
+  },
+  {
+    "title": "UI Designer (Santiago) Full time",
+    "company": "UI Designer (Santiago)",
+    "location": "Santiago (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/design-ux/ui-designer-santiago-bsale-santiago-4981",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:02.283378+00:00"
+  },
+  {
+    "title": "Contador P\u00fablico Full time",
+    "company": "Contador P\u00fablico",
+    "location": "Remote (Peru)",
+    "url": "https://www.getonbrd.com/jobs/operations-management/contador-pubico-enviame-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:01.918712+00:00"
+  },
+  {
+    "title": "Production Scheduler Full time",
+    "company": "Production Scheduler",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/jobs/operaciones-management/remote-production-scheduler-marie-originals-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:02.090146+00:00"
+  },
+  {
+    "title": "Customer Success Manager Full time",
+    "company": "Customer Success Manager",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/empleos/servicio-cliente/customer-success-manager-bnamericas-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:02.667248+00:00"
+  },
+  {
+    "title": "Docente, Inbound Marketing Iii, Sede Valpara\u00edso, Diurno Full time",
+    "company": "Docente, Inbound Marketing Iii, Sede Valpara\u00edso, Diurno",
+    "location": "Valpara\u00edso (In-office)",
+    "url": "https://www.getonbrd.com/jobs/digital-marketing/docente-inbound-marketing-iii-sede-valparaiso-diurno-duoc-uc-valparaiso",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:05.334999+00:00"
+  },
+  {
+    "title": "Head of Security Full time",
+    "company": "Head of Security",
+    "location": "Santiago (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/cybersecurity/head-of-security-talana-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:02.755729+00:00"
+  },
+  {
+    "title": "Arquitecto de Ciberseguridad Full time",
+    "company": "Arquitecto de Ciberseguridad",
+    "location": "Santiago (Hybrid)",
+    "url": "https://www.getonbrd.com/empleos/cybersecurity/arquitecto-de-ciberseguridad-factor-it-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:02.900204+00:00"
+  },
+  {
+    "title": "Ingeniero de Seguridad en Proyectos Full time",
+    "company": "Ingeniero de Seguridad en Proyectos",
+    "location": "Santiago (In-office)",
+    "url": "https://www.getonbrd.com/empleos/cybersecurity/ingeniero-de-seguridad-en-proyectos-bc-tecnologia-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:04.992312+00:00"
+  },
+  {
+    "title": "AI Automations Specialist Part time",
+    "company": "AI Automations Specialist",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/jobs/machine-learning-ai/ai-automations-specialist-the-business-of-dance-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:05.362520+00:00"
+  },
+  {
+    "title": "AI Expansion KAM Full time\ud83d\ude80 RESPONDE R\u00c1PIDO",
+    "company": "AI Expansion KAM",
+    "location": "Ciudad de M\u00e9xico (In-office)",
+    "url": "https://www.getonbrd.com/empleos/machine-learning-ai/ai-expansion-kam-agendapro-ciudad-de-mexico",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:05.533927+00:00"
+  },
+  {
+    "title": "Wanted: the World\u2019s Most Reliable Video Editor Full time",
+    "company": "Wanted: the World\u2019s Most Reliable Video Editor",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/empleos/publicidad-medios/wanted-the-world-s-most-reliable-remote-video-editor-crescat-digital-ltd-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:06.324984+00:00"
+  },
+  {
+    "title": "Recruiter IT Full time",
+    "company": "Recruiter IT",
+    "location": "Remote (Chile and Argentina)",
+    "url": "https://www.getonbrd.com/empleos/recursos-humanos/recruiter-it-improving-south-america-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:07.040290+00:00"
+  },
+  {
+    "title": "Chief Digital and Information Officer Full time",
+    "company": "Chief Digital and Information Officer",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/jobs/other/chief-digital-and-information-officer-govtech-barbados-limited-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:07.122793+00:00"
+  },
+  {
+    "title": "Arquitecto SAP Extensibility Full time",
+    "company": "Arquitecto SAP Extensibility",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/jobs/other/arquitecto-sap-extensibility-coderslab-io-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:07.271786+00:00"
+  },
+  {
+    "title": "Soporte en Terreno Senior Full time",
+    "company": "Soporte en Terreno Senior",
+    "location": "Santiago (In-office)",
+    "url": "https://www.getonbrd.com/empleos/hardware-electronics/soporte-en-terreno-senior-bc-tecnologia-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:07.347497+00:00"
+  },
+  {
+    "title": "Product Owner Full time",
+    "company": "Product Owner",
+    "location": "Lima (Hybrid)",
+    "url": "https://www.getonbrd.com/empleos/innovacion-agilidad/product-owner-rankmi-lima",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:01.486884+00:00"
+  },
+  {
+    "title": "Ingeniero/a de Machine Learning Full time",
+    "company": "Ingeniero/a de Machine Learning",
+    "location": "Remote (Chile)",
+    "url": "https://www.getonbrd.com/empleos/machine-learning-ai/ingeniero-a-de-machine-learning-suncast-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:05.506562+00:00"
+  },
+  {
+    "title": "Data Scientist Senior \u2013 AWS / Sagemaker / Python Full time",
+    "company": "Data Scientist Senior \u2013 AWS / Sagemaker / Python",
+    "location": "Remote (South America and Central America)",
+    "url": "https://www.getonbrd.com/jobs/programacion/data-scientist-senior-aws-sagemaker-python-coyanservices-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:00.188164+00:00"
+  },
+  {
+    "title": "QA Funcional / Automatizador Full time",
+    "company": "QA Funcional / Automatizador",
+    "location": "Santiago (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/sysadmin-devops-qa/qa-funcional-automatizador-tcit-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:00.740560+00:00"
+  },
+  {
+    "title": "Business Developer Full time",
+    "company": "Business Developer",
+    "location": "Santiago (Hybrid)",
+    "url": "https://www.getonbrd.com/empleos/comercial-ventas/business-developer-ooh-publicidad-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:01.715277+00:00"
+  },
+  {
+    "title": "Placement Matching Specialist Full time",
+    "company": "Placement Matching Specialist",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/empleos/comercial-ventas/placement-matching-specialist-virtual-internships-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:01.833926+00:00"
+  },
+  {
+    "title": "Bookkeeper at Qcr Full time",
+    "company": "Bookkeeper at Qcr",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/jobs/operaciones-management/bookkeeper-at-qcr-marie-originals-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:02.063970+00:00"
+  },
+  {
+    "title": "Strategic Purchaser Full time",
+    "company": "Strategic Purchaser",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/jobs/operaciones-management/strategic-purchaser-marie-originals-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:02.118666+00:00"
+  },
+  {
+    "title": "Onboarding Lead Full time",
+    "company": "Onboarding Lead",
+    "location": "Santiago (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/customer-support/onboarding-lead-lemontech-santiago-ea7d",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:02.498417+00:00"
+  },
+  {
+    "title": "Ejecutiva de Cuenta Marketing Junior Full time\ud83d\ude80 RESPONDE R\u00c1PIDO",
+    "company": "Ejecutiva de Cuenta Marketing Junior",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/jobs/marketing-digital/ejecutiva-de-cuenta-match-agencia-consultora-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:05.251432+00:00"
+  },
+  {
+    "title": "Auditor de Seguridad Oracle Full time",
+    "company": "Auditor de Seguridad Oracle",
+    "location": "Bogot\u00e1 (In-office)",
+    "url": "https://www.getonbrd.com/empleos/cybersecurity/auditor-de-seguridad-oracle-factor-it-bogota",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:02.844469+00:00"
+  },
+  {
+    "title": "AI Security Engineer Full time",
+    "company": "AI Security Engineer",
+    "location": "Remote (9 locations)",
+    "url": "https://www.getonbrd.com/jobs/cybersecurity/ai-security-engineer-niuro-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:02.938763+00:00"
+  },
+  {
+    "title": "Soporte TI en Terreno \u2013 Tarapac\u00e1 Full time",
+    "company": "Soporte TI en Terreno \u2013 Tarapac\u00e1",
+    "location": "Iquique (In-office)",
+    "url": "https://www.getonbrd.com/empleos/technical-support/soporte-ti-en-terreno-tarapaca-bc-tecnologia-iquique",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:05.715317+00:00"
+  },
+  {
+    "title": "Arquitecto de Datos Sr. (Data & AI) Full time",
+    "company": "Arquitecto de Datos Sr. (Data & AI)",
+    "location": "Remote (13 locations)",
+    "url": "https://www.getonbrd.com/empleos/machine-learning-ai/arquitecto-de-datos-sr-data-ai-grupo-mariposa-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:05.478835+00:00"
+  },
+  {
+    "title": "AI Delivery & Consulting Specialist Full time",
+    "company": "AI Delivery & Consulting Specialist",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/empleos/machine-learning-ai/ai-delivery-consulting-specialist-topdoerr-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:05.451562+00:00"
+  },
+  {
+    "title": "Senior iOS / Android Developer for Major Video Streaming App Freelance",
+    "company": "Senior iOS / Android Developer for Major Video Streaming App",
+    "location": "Santiago (Hybrid)",
+    "url": "https://www.getonbrd.com/empleos/desarrollo-mobile/senior-ios-android-developer-merapar-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:05.948949+00:00"
+  },
+  {
+    "title": "Events Coordinator Full time",
+    "company": "Events Coordinator",
+    "location": "Remote (South America, Central America or Mexico)",
+    "url": "https://www.getonbrd.com/jobs/advertising-media/events-coordinator-your-startup-operations-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:06.288975+00:00"
+  },
+  {
+    "title": "Desarrollador Full-Stack (H\u00edbrido) Full time",
+    "company": "Desarrollador Full-Stack (H\u00edbrido)",
+    "location": "Santiago (Hybrid)",
+    "url": "https://www.getonbrd.com/empleos/programacion/desarrollador-fullstack-hibrido-bc-tecnologia-santiago-f729",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:00.132933+00:00"
+  },
+  {
+    "title": "Engineering Lead Full time",
+    "company": "Engineering Lead",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/empleos/programacion/engineering-lead-bnamericas-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:00.219364+00:00"
+  },
+  {
+    "title": "Business Analyst \u2013 Product & Operations Full time",
+    "company": "Business Analyst \u2013 Product & Operations",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/empleos/data-science-analytics/business-analyst-product-operations-bnamericas-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:00.861465+00:00"
+  },
+  {
+    "title": "Product Manager Senior Full time",
+    "company": "Product Manager Senior",
+    "location": "Santiago (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/innovation-agile/product-manager-senior-bc-tecnologia-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:01.572035+00:00"
+  },
+  {
+    "title": "Contador P\u00fablico Full time",
+    "company": "Contador P\u00fablico",
+    "location": "Remote (Mexico)",
+    "url": "https://www.getonbrd.com/empleos/operaciones-management/contador-publico-enviame-remote-ed62",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:01.946432+00:00"
+  },
+  {
+    "title": "Influencer Marketing Manager Full time",
+    "company": "Influencer Marketing Manager",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/jobs/advertising-media/influencer-marketing-manager-vert-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:06.419059+00:00"
+  },
+  {
+    "title": "Contract Creative Editor Full time",
+    "company": "Contract Creative Editor",
+    "location": "Remote (South America and Mexico)",
+    "url": "https://www.getonbrd.com/jobs/advertising-media/contract-creative-editor-tubescience-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:06.933515+00:00"
+  },
+  {
+    "title": "Experto Funcional IT / Sector Bancario Full time",
+    "company": "Experto Funcional IT / Sector Bancario",
+    "location": "Quito (In-office)",
+    "url": "https://www.getonbrd.com/empleos/otra/experto-funcional-it-sector-bancario-devsu-quito",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:07.244454+00:00"
+  },
+  {
+    "title": "Product Owner Full time",
+    "company": "Product Owner",
+    "location": "Ciudad de M\u00e9xico (Hybrid)",
+    "url": "https://www.getonbrd.com/empleos/innovacion-agilidad/product-owner-rankmi-ciudad-de-mexico-7899",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:01.544627+00:00"
+  },
+  {
+    "title": "Account Executive Full time",
+    "company": "Account Executive",
+    "location": "Ciudad de M\u00e9xico (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/sales/account-executive-lemontech-ciudad-de-mexico-668d",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:01.860621+00:00"
+  },
+  {
+    "title": "Jefe/a de Cotizaciones Full time",
+    "company": "Jefe/a de Cotizaciones",
+    "location": "Santiago (Hybrid)",
+    "url": "https://www.getonbrd.com/empleos/operaciones-management/jefe-a-de-cotizaciones-bnp-paribas-cardif-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:01.974688+00:00"
+  },
+  {
+    "title": "Analista de Soporte Nivel 1 Full time",
+    "company": "Analista de Soporte Nivel 1",
+    "location": "Santiago (Hybrid)",
+    "url": "https://www.getonbrd.com/empleos/servicio-cliente/analista-de-soporte-nivel-1-bc-tecnologia-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:02.467650+00:00"
+  },
+  {
+    "title": "Customer Coordinator Full time",
+    "company": "Customer Coordinator",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/jobs/servicio-cliente/customer-coordinator-marie-originals-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:02.590049+00:00"
+  },
+  {
+    "title": "Video Marketing Editor (Latam ) Full time",
+    "company": "Video Marketing Editor (Latam )",
+    "location": "Remote (South America, Central America or Mexico)",
+    "url": "https://www.getonbrd.com/jobs/digital-marketing/video-marketing-editor-latam-remote-egelloc-corporation-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:05.223352+00:00"
+  },
+  {
+    "title": "Junior Network Engineer (Presencial) Full time",
+    "company": "Junior Network Engineer (Presencial)",
+    "location": "Santiago (In-office)",
+    "url": "https://www.getonbrd.com/jobs/sysadmin-devops-qa/networking-presencial-bc-tecnologia-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:00.698644+00:00"
+  },
+  {
+    "title": "T\u00e9cnico Preventa (Lima) Full time",
+    "company": "T\u00e9cnico Preventa (Lima)",
+    "location": "Lima (Hybrid)",
+    "url": "https://www.getonbrd.com/empleos/comercial-ventas/tecnico-preventa-lima-factor-it-lima-ce05",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:01.688325+00:00"
+  },
+  {
+    "title": "Virtual Assistant Lead Generation No experience required  Internship",
+    "company": "Virtual Assistant Lead Generation",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/empleos/operaciones-management/virtual-assistant-lead-generation-levvo-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:02.145317+00:00"
+  },
+  {
+    "title": "Analista de Incidentes Full time",
+    "company": "Analista de Incidentes",
+    "location": "Lima (Hybrid)",
+    "url": "https://www.getonbrd.com/empleos/technical-support/analista-de-incidentes-mesa-de-ayuda-coderslab-io-lima",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:05.798178+00:00"
+  },
+  {
+    "title": "Soporte T\u00e9cnico / Help Desk Freelance",
+    "company": "Soporte T\u00e9cnico / Help Desk",
+    "location": "Santiago (In-office)",
+    "url": "https://www.getonbrd.com/empleos/technical-support/soporte-tecnico-help-desk-lisit-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:05.886415+00:00"
+  },
+  {
+    "title": "AI Native Engineer Full time",
+    "company": "AI Native Engineer",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/empleos/machine-learning-ai/ai-native-engineer-compara-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:05.633548+00:00"
+  },
+  {
+    "title": "Desarrollador Flutter Full time",
+    "company": "Desarrollador Flutter",
+    "location": "Santiago (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/desarrollo-mobile/desarrollador-flutter-hf-solutions-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:06.175116+00:00"
+  },
+  {
+    "title": "Vendedor de Seguros Automotrices",
+    "company": "Progesys",
+    "location": "3,9 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-vendedor-de-seguros-automotrices-santiago-centro-en-santiago-centro-F2F41E954243E4F961373E686DCF3405#lc=ListOffers-Score4-0",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:10.741761+00:00"
+  },
+  {
+    "title": "Vendedor Full Time Reemplazo Maui Espacio Urbano Vi\u00f1a Del Mar",
+    "company": "Maui and Sons",
+    "location": "",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-vendedor-full-time-reemplazo-maui-espacio-urbano-vina-del-mar-maui-and-sons-en-vina-del-mar-76CBCB9765AC6A9761373E686DCF3405#lc=ListOffers-Score4-1",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:10.769801+00:00"
+  },
+  {
+    "title": "Vendedor de Tienda full time Estaci\u00f3n Central Turnos rotativos ma\u00f1ana tarde noche",
+    "company": "Esmax",
+    "location": "4,2 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-vendedor-de-tienda-full-time-estacion-central-turnos-rotativos-manana-tarde-noche-en-santiago-estacion-central-024165A144701A9961373E686DCF3405#lc=ListOffers-Score4-2",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:10.802388+00:00"
+  },
+  {
+    "title": "Vendedor(a) 44 hrs (Temporada)",
+    "company": "ATCOM",
+    "location": "4,0 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-vendedora-44-hrs-temporada-mall-plaza-vespucio-en-santiago-la-florida-C10C414525C1FCC661373E686DCF3405#lc=ListOffers-Score4-3",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:10.833831+00:00"
+  },
+  {
+    "title": "Vendedor Full Time Reemplazo Maui Alto Las Condes",
+    "company": "Maui and Sons",
+    "location": "",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-vendedor-full-time-reemplazo-maui-alto-las-condes-maui-and-sons-en-santiago-las-condes-85A49EE57130B80361373E686DCF3405#lc=ListOffers-Score4-4",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:10.985519+00:00"
+  },
+  {
+    "title": "Vendedor de Harina para la Zona O\u2019Higgins, Maule y Chillan",
+    "company": "M&G Expert Consulting E.I.R.L.",
+    "location": "",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-vendedor-de-harina-para-la-zona-ohiggins-maule-y-chillan-en-rancagua-03847152D1379A3861373E686DCF3405#lc=ListOffers-Score4-5",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:11.012574+00:00"
+  },
+  {
+    "title": "Vendedor de Harina para la Zona O\u2019Higgins, Maule y Chillan",
+    "company": "M&G Expert Consulting E.I.R.L.",
+    "location": "",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-vendedor-de-harina-para-la-zona-ohiggins-maule-y-chillan-en-talca-4C22111D97D036E061373E686DCF3405#lc=ListOffers-Score4-6",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:11.039285+00:00"
+  },
+  {
+    "title": "Vendedor de Harina para la Zona O\u2019Higgins, Maule y Chillan",
+    "company": "M&G Expert Consulting E.I.R.L.",
+    "location": "",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-vendedor-de-harina-para-la-zona-ohiggins-maule-y-chillan-en-chillan-02FC83069A1BF15A61373E686DCF3405#lc=ListOffers-Score4-7",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:11.075242+00:00"
+  },
+  {
+    "title": "Ejecutivo Comercial Canal Horeca",
+    "company": "Manpower Chile",
+    "location": "4,2 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivo-comercial-canal-horeca-en-santiago-renca-3B644B14DD94082761373E686DCF3405#lc=ListOffers-Score4-8",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:11.101518+00:00"
+  },
+  {
+    "title": "Vendedor/a",
+    "company": "Adecco Chile",
+    "location": "4,2 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-vendedora-pt-25-ovalle-en-ovalle-A99AD5110B5434C761373E686DCF3405#lc=ListOffers-Score4-9",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:13.213518+00:00"
+  },
+  {
+    "title": "Consultor(a) Comercial de Remuneraciones",
+    "company": "ECRGROUP\u00ae\ufe0f",
+    "location": "4,2 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-consultora-comercial-de-remuneraciones-ecr-group-en-santiago-nunoa-7DC1C92D836E2BF861373E686DCF3405#lc=ListOffers-Score4-10",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:11.162768+00:00"
+  },
+  {
+    "title": "Vendedor/a",
+    "company": "Adecco Chile",
+    "location": "4,2 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-vendedora-pt-25-concepcion-en-concepcion-FBA5F47B1EB4F12661373E686DCF3405#lc=ListOffers-Score4-11",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:11.199870+00:00"
+  },
+  {
+    "title": "Vendedor/a con experiencia Tienda Capilar 44 horas Mall Espacio Urbano La dehesa",
+    "company": "Tua Retail",
+    "location": "",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-vendedora-con-experiencia-tienda-capilar-44-horas-mall-espacio-urbano-la-dehesa-la-dehesa-en-santiago-lo-barnechea-ED2D0E8A88AF08DD61373E686DCF3405#lc=ListOffers-Score4-12",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:11.229042+00:00"
+  },
+  {
+    "title": "Cliente Inc\u00f3gnito \u2013 Evaluaci\u00f3n Servicio Comercial",
+    "company": "Importante empresa del sector",
+    "location": "Antofagasta, Antofagasta",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-cliente-incognito-evaluacion-servicio-comercial-zona-norte-iquique-antofagasta-y-copiapo-en-antofagasta-277565680B9D002F61373E686DCF3405#lc=ListOffers-Score4-13",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:11.265214+00:00"
+  },
+  {
+    "title": "Vendedor de Combustible Part Time P.10 Gran Avenida, San Miguel",
+    "company": "Esmax",
+    "location": "4,2 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-vendedor-de-combustible-part-time-p10-gran-avenida-san-miguel-sabados-y-domingos-20-horas-semanales-turnos-rotativos-de-manana-y-tarde-en-santiago-san-miguel-4BF5D0C435AA95E561373E686DCF3405#lc=ListOffers-Score4-14",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:11.294768+00:00"
+  },
+  {
+    "title": "Vendedor en terreno",
+    "company": "Klap",
+    "location": "",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-vendedor-en-terreno-antofagasta-en-antofagasta-5BE9C464B066ED8D61373E686DCF3405#lc=ListOffers-Score4-15",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:11.325642+00:00"
+  },
+  {
+    "title": "Asistente comercial",
+    "company": "Zona Laboral",
+    "location": "",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-asistente-comercial-en-santiago-providencia-1B585909C9DFC76461373E686DCF3405#lc=ListOffers-Score4-16",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:11.365344+00:00"
+  },
+  {
+    "title": "Vendedor/a Empresa Gastron\u00f3mica industrial / Sucursal Concepci\u00f3n",
+    "company": "Esencial Consultores SPA",
+    "location": "",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-vendedora-empresa-gastronomica-industrial-sucursal-concepcion-en-concepcion-CB063002AA16C95861373E686DCF3405#lc=ListOffers-Score4-17",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:11.407252+00:00"
+  },
+  {
+    "title": "Se requiere de Ejecutivo/a Comercial para ventas B2B con experiencia",
+    "company": "XinerLink",
+    "location": "3,9 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-se-requiere-de-ejecutivoa-comercial-para-ventas-b2b-con-experiencia-proyecto-en-las-condes-en-santiago-las-condes-6CBB76F830A013F161373E686DCF3405#lc=ListOffers-Score4-18",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:11.463807+00:00"
+  },
+  {
+    "title": "Promo Vendedor Peak Time 30 HRS",
+    "company": "Bur\u00f4 Temps",
+    "location": "",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-promo-vendedor-peak-time-30-hrs-mall-plaza-norte-en-santiago-huechuraba-5A6AFBBAE237895261373E686DCF3405#lc=ListOffers-Score4-19",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:11.493448+00:00"
+  },
+  {
+    "title": "Ejecutivo de Venta de Producto Financiero (Captador) Jornada Parcial Tda La Serena Banco Ripley",
+    "company": "RIPLEY",
+    "location": "4,3 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivo-de-venta-de-producto-financiero-captador-jornada-parcial-tda-la-serena-banco-ripley-banco-ripley-tda-san-bernardo-en-la-serena-6807A346CA29A98461373E686DCF3405#lc=ListOffers-Score4-0",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:11.522947+00:00"
+  },
+  {
+    "title": "Ejecutivo call center/ventas de seguro",
+    "company": "XinerLink",
+    "location": "3,9 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivo-call-centerventas-de-seguro-santiago-centro-en-santiago-centro-7DEA0C23F018CABE61373E686DCF3405#lc=ListOffers-Score4-1",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:11.548954+00:00"
+  },
+  {
+    "title": "Ejecutivo/a de Ventas Isapre",
+    "company": "Manpower Chile",
+    "location": "4,2 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivoa-de-ventas-isapre-altas-comisiones-hibrido-en-santiago-las-condes-CDF9BC4437AB20D061373E686DCF3405#lc=ListOffers-Score4-2",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:11.583270+00:00"
+  },
+  {
+    "title": "Agente Digital de Ventas y Streaming",
+    "company": "Grupo Konecta Chile",
+    "location": "3,8 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-agente-digital-de-ventas-y-streaming-lunes-a-viernes-de-1000-a-1800-hrs-en-santiago-macul-32A2DBBD3EC53E6861373E686DCF3405#lc=ListOffers-Score4-3",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:11.613455+00:00"
+  },
+  {
+    "title": "Ejecutivo de Ventas Telef\u00f3nico $650.000. Comisiones sin Tope!!!",
+    "company": "Grupo Konecta Chile",
+    "location": "3,8 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivo-de-ventas-telefonico-650000-comisiones-sin-tope-44hs-semanales-en-santiago-macul-F64F1D83B112A1DA61373E686DCF3405#lc=ListOffers-Score4-4",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:11.649036+00:00"
+  },
+  {
+    "title": "Ejecutivo de Ventas / Trabajo en Terreno /Telecomunicaciones Productos Hogar / Los Angeles",
+    "company": "Grupo Tawa",
+    "location": "3,9 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivo-de-ventas-trabajo-en-terreno-telecomunicaciones-productos-hogar--los-angeles-disponibilidad-inmediata-en-los-angeles-E71069A32FDCA2FC61373E686DCF3405#lc=ListOffers-Score4-5",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:11.682286+00:00"
+  },
+  {
+    "title": "Ejecutivo/a Comercial Alto Desempe\u00f1o \u2013 Venta de Salud",
+    "company": "Manpower Chile",
+    "location": "4,2 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivoa-comercial-alto-desempeno-venta-de-salud-las-condes-en-santiago-las-condes-EE24725CA05911F361373E686DCF3405#lc=ListOffers-Score4-6",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:11.722331+00:00"
+  },
+  {
+    "title": "Ejecutivo de Venta Producto Financiero (Captador) Part Time La Serena Banco Ripley",
+    "company": "RIPLEY",
+    "location": "4,3 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivo-de-venta-producto-financiero-captador-part-time-la-serena-banco-ripley-en-la-serena-21E3740D18E0253061373E686DCF3405#lc=ListOffers-Score4-7",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:11.751049+00:00"
+  },
+  {
+    "title": "Ejecutivo/a de Ventas \u2013 Jornada Flexible / Terreno / Telecomunicaciones",
+    "company": "ECRGROUP\u00ae\ufe0f",
+    "location": "4,2 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivoa-de-ventas-jornada-flexible-terreno-telecomunicaciones-comision-sin-tope-en-temuco-FDCFE5D18B8A015361373E686DCF3405#lc=ListOffers-Score4-8",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:11.780173+00:00"
+  },
+  {
+    "title": "Ejecutivos/as de call center Ventas 30 horas",
+    "company": "XinerLink",
+    "location": "3,9 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivosas-de-call-center-ventas-30-horas-santiago-en-santiago-centro-234837B640D5284261373E686DCF3405#lc=ListOffers-Score4-9",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:11.812106+00:00"
+  },
+  {
+    "title": "Ejecutivo en Terreno para Ventas de M\u00e1quinas de Pago RM",
+    "company": "Progestion Chile",
+    "location": "4,2 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivo-en-terreno-para-ventas-de-maquinas-de-pago-rm-en-santiago-la-florida-0DF142EE6D27C66C61373E686DCF3405#lc=ListOffers-Score4-10",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:11.843423+00:00"
+  },
+  {
+    "title": "Ejecutivo de ventas en terreno Santiago RM (Experiencia Ventas tangibles e Intangibles)",
+    "company": "Progestion Chile",
+    "location": "4,2 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivo-de-ventas-en-terreno-santiago-rm-experiencia-ventas-tangibles-e-intangibles-en-santiago-nunoa-565A1950D971590C61373E686DCF3405#lc=ListOffers-Score4-11",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:11.880568+00:00"
+  },
+  {
+    "title": "Ejecutivo/a de Ventas de Isapre (H\u00edbrido) Experiencia en Intangible",
+    "company": "Manpower Chile",
+    "location": "4,2 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivoa-de-ventas-de-isapre-hibrido-experiencia-en-intangible-las-condes-en-santiago-providencia-1E6F3BA13DC62D6861373E686DCF3405#lc=ListOffers-Score4-12",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:11.908182+00:00"
+  },
+  {
+    "title": "Ejecutivo/a de Ventas Isapre",
+    "company": "Manpower Chile",
+    "location": "4,2 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivoa-de-ventas-isapre-altas-comisiones-hibrido-en-puente-alto-ED4855FCBD1C3EC561373E686DCF3405#lc=ListOffers-Score4-13",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:11.936231+00:00"
+  },
+  {
+    "title": "Ejecutivo/a de Ventas de Isapre (H\u00edbrido) Experiencia en Intangible",
+    "company": "Manpower Chile",
+    "location": "4,2 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivoa-de-ventas-de-isapre-hibrido-experiencia-en-intangible-las-condes-en-santiago-providencia-4A070B17F36422CC61373E686DCF3405#lc=ListOffers-Score4-14",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:11.980163+00:00"
+  },
+  {
+    "title": "Ejecutivo de ventas ( experiencia en ferreter\u00eda industrial)",
+    "company": "Manpower Chile",
+    "location": "4,2 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivo-de-ventas-experiencia-en-ferreteria-industrial-pudahuel-en-santiago-pudahuel-80DA1F710557E13161373E686DCF3405#lc=ListOffers-Score4-15",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:12.009647+00:00"
+  },
+  {
+    "title": "Ejecutivo/a de Ventas Isapre",
+    "company": "Manpower Chile",
+    "location": "4,2 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivoa-de-ventas-isapre-altas-comisiones-hibrido-en-santiago-renca-C75C917D47E2575E61373E686DCF3405#lc=ListOffers-Score4-16",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:12.058097+00:00"
+  },
+  {
+    "title": "Coordinador de Operaciones en Punto de Venta",
+    "company": "ECRGROUP\u00ae\ufe0f",
+    "location": "4,2 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-coordinador-de-operaciones-en-punto-de-venta-ecr-group-en-santiago-nunoa-5ECAF619ED958F7461373E686DCF3405#lc=ListOffers-Score4-17",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:12.086215+00:00"
+  },
+  {
+    "title": "Asesor/a de ventas Tienda Pandora",
+    "company": "PANDORA JEWELRY CHILE SPA",
+    "location": "",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-asesora-de-ventas-tienda-pandora-belloto-en-vina-del-mar-0C0929FC2F37E7E861373E686DCF3405#lc=ListOffers-Score4-18",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:12.126124+00:00"
+  },
+  {
+    "title": "Ejecutivo de Ventas en Terreno \u2013 Fibra \u00d3ptica",
+    "company": "ECRGROUP\u00ae\ufe0f",
+    "location": "4,2 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivo-de-ventas-en-terreno-fibra-optica-comisiones-sin-tope-en-santiago-maipu-CF6274ACC24D31BB61373E686DCF3405#lc=ListOffers-Score4-19",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:12.154806+00:00"
+  },
+  {
+    "title": "Soporte T\u00e9cnico Terreno \u2013 Presencial (Las Condes)",
+    "company": "BCTecnolog\u00eda",
+    "location": "4,7 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-soporte-tecnico-terreno-presencial-las-condes-en-santiago-las-condes-5774A5AF41C5D5D961373E686DCF3405#lc=ListOffers-Score4-0",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:12.187929+00:00"
+  },
+  {
+    "title": "Operador Implementador de Exhibiciones (Apoyo 1 Mes) La Serena $540.000 L\u00edquidos",
+    "company": "Manpower Chile",
+    "location": "4,2 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-operador-implementador-de-exhibiciones-apoyo-1-mes-la-serena-540000-liquidos-en-la-serena-98B2C166652AE22061373E686DCF3405#lc=ListOffers-Score4-1",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:12.219839+00:00"
+  },
+  {
+    "title": "Carga y Descarga de Camiones / Apoyo solo por 07 de Abril/ $25.000 diarios/ Antofagasta",
+    "company": "ECRGROUP\u00ae\ufe0f",
+    "location": "4,2 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-carga-y-descarga-de-camiones-apoyo-solo-por-07-de-abril-25000-diarios-antofagasta-en-antofagasta-05146C15423A4D4761373E686DCF3405#lc=ListOffers-Score4-2",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:12.250325+00:00"
+  },
+  {
+    "title": "Operador Implementador de Exhibiciones Pe\u00f1alol\u00e9n $540.000 L\u00edquidos (Apoyo 1 Mes)",
+    "company": "Manpower Chile",
+    "location": "4,2 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-operador-implementador-de-exhibiciones-penalolen-540000-liquidos-apoyo-1-mes-lunes-a-viernes-colacion-uniforme-en-santiago-penalolen-BA33FF7AAD56AEEE61373E686DCF3405#lc=ListOffers-Score4-3",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:12.387114+00:00"
+  },
+  {
+    "title": "Operador Implementador de Exhibiciones $540.000 L\u00edquidos Lunes a Viernes San Miguel",
+    "company": "Manpower Chile",
+    "location": "4,2 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-operador-implementador-de-exhibiciones-540000-liquidos-lunes-a-viernes-san-miguel-apoyo-1-mes-en-santiago-san-miguel-1E8A02ED7B057C6B61373E686DCF3405#lc=ListOffers-Score4-4",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:12.417708+00:00"
+  },
+  {
+    "title": "Apoyo Vacaciones Maui Outlet ROM Rancagua",
+    "company": "Maui and Sons",
+    "location": "",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-apoyo-vacaciones-maui-outlet-rom-rancagua-en-rancagua-153F6EF6B2AF790261373E686DCF3405#lc=ListOffers-Score4-5",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:12.446336+00:00"
+  },
+  {
+    "title": "Apoyo prevencion perdida Ovalle",
+    "company": "Isam",
+    "location": "4,0 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-apoyo-prevencion-perdida-ovalle-part-time-sabado-domingo-en-ovalle-AFE4EE6F9828D30761373E686DCF3405#lc=ListOffers-Score4-6",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:12.474783+00:00"
+  },
+  {
+    "title": "T\u00e9cnicos Soporte Inform\u00e1tico Titulados",
+    "company": "Multinacional de servicios en TI",
+    "location": "Santiago Centro, R.Metropolitana",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-tecnicos-soporte-informatico-titulados-trabajo-en-terreno-toda-la-r-metropolitana-en-santiago-centro-37330DAFF69B19C861373E686DCF3405#lc=ListOffers-Score4-7",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:12.510564+00:00"
+  },
+  {
+    "title": "Administrador(a) de Redes y Soporte a Usuarios",
+    "company": "Importante empresa del sector",
+    "location": "Santiago - Huechuraba, R.Metropolitana",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-administradora-de-redes-y-soporte-a-usuarios-en-santiago-huechuraba-0C9E1220353519C761373E686DCF3405#lc=ListOffers-Score4-8",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:12.543672+00:00"
+  },
+  {
+    "title": "Vendedor (a) Full time 44 hrs reemplazo 1 semana y posterior apoyo",
+    "company": "Mobile Outfitters",
+    "location": "",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-vendedor-a-full-time-44-hrs-reemplazo-1-semana-y-posterior-apoyo-mobile-outfitters-falabella-puerto-montt-en-puerto-montt-54445E984AB6983361373E686DCF3405#lc=ListOffers-Score4-9",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:12.572160+00:00"
+  },
+  {
+    "title": "Operador Bodega PM Antofagasta /$580.000 Liquido",
+    "company": "Alcansa",
+    "location": "4,0 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-operador-bodega-pm-antofagasta-580000-liquido-apoyo-2-mes-en-antofagasta-E5A0DD4484349C0E61373E686DCF3405#lc=ListOffers-Score4-10",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:12.601397+00:00"
+  },
+  {
+    "title": "Carga y Descarga de Camiones / Apoyo solo por 31 de Marzo/ $25.000 diarios/ Concepci\u00f3n",
+    "company": "ECRGROUP\u00ae\ufe0f",
+    "location": "4,2 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-carga-y-descarga-de-camiones-apoyo-solo-por-31-de-marzo-25000-diarios-concepcion-en-concepcion-D4A79817B6DB512B61373E686DCF3405#lc=ListOffers-Score4-11",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:12.631644+00:00"
+  },
+  {
+    "title": "Ejecutivo/a de Soporte Comercial, Concepci\u00f3n",
+    "company": "Importante empresa del sector",
+    "location": "Concepci\u00f3n, B\u00edob\u00edo",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivoa-de-soporte-comercial-concepcion-en-concepcion-5D6E21384CC181E161373E686DCF3405#lc=ListOffers-Score4-12",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:12.667040+00:00"
+  },
+  {
+    "title": "analista soporte t\u00e9cnico",
+    "company": "Importante empresa del sector",
+    "location": "Colombia",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-analista-soporte-tecnico-en-colombia-E40EFA8B9D68F30161373E686DCF3405#lc=ListOffers-Score4-13",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:12.700963+00:00"
+  },
+  {
+    "title": "Pr\u00e1ctica Sistemas Soporte TI",
+    "company": "Aerosan",
+    "location": "",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-practica-sistemas-soporte-ti-en-santiago-pudahuel-0A41A6F1C64B644A61373E686DCF3405#lc=ListOffers-Score4-14",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:12.732586+00:00"
+  },
+  {
+    "title": "T\u00e9cnico de Soporte",
+    "company": "Importante empresa del sector",
+    "location": "Santiago - Providencia, R.Metropolitana",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-tecnico-de-soporte-en-santiago-providencia-4070DC72DF4DB38561373E686DCF3405#lc=ListOffers-Score4-15",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:12.761964+00:00"
+  },
+  {
+    "title": "Apoyo jefatura",
+    "company": "Pichara",
+    "location": "",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-apoyo-jefatura-melipilla-en-melipilla-E5D3DB07D368EF1361373E686DCF3405#lc=ListOffers-Score4-16",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:12.794119+00:00"
+  },
+  {
+    "title": "Ingeniero/a de Soporte Cloud (GCP)",
+    "company": "Importante empresa del sector",
+    "location": "Santiago - Las condes, R.Metropolitana",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ingenieroa-de-soporte-cloud-gcp-en-santiago-las-condes-C21712EC686195E061373E686DCF3405#lc=ListOffers-Score4-17",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:12.822740+00:00"
+  },
+  {
+    "title": "Ejecutivo de Atenci\u00f3n al Cliente Call Center Honorarios",
+    "company": "VENTAS TECNICAS SPA",
+    "location": "3,9 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivo-de-atencion-al-cliente-call-center-honorarios-apoyo-remanente-1-mes-en-santiago-centro-A49CA2DF6153B8DA61373E686DCF3405#lc=ListOffers-Score4-18",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:12.855849+00:00"
+  },
+  {
+    "title": "Carga y Descarga de Camiones / Apoyo solo por 31 de Marzo/ $25.000 diarios/ Copiap\u00f3",
+    "company": "ECRGROUP\u00ae\ufe0f",
+    "location": "4,2 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-carga-y-descarga-de-camiones-apoyo-solo-por-31-de-marzo-25000-diarios-copiapo-en-copiapo-F4931D5DBCC96D4D61373E686DCF3405#lc=ListOffers-Score4-19",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:12.886776+00:00"
+  },
+  {
+    "title": "Ejecutivo/a Comercial",
+    "company": "Importante empresa del sector",
+    "location": "Santiago - Huechuraba, R.Metropolitana",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivoa-comercial-productos-corporativos-huechuraba-en-santiago-huechuraba-1A92EAD7555A933661373E686DCF3405#lc=ListOffers-Score4-0",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:12.914836+00:00"
+  },
+  {
+    "title": "Vendedor de Seguros Automotrices",
+    "company": "Progesys",
+    "location": "3,9 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-vendedor-de-seguros-automotrices-santiago-centro-en-santiago-centro-F2F41E954243E4F961373E686DCF3405#lc=ListOffers-Score4-1",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:12.948035+00:00"
+  },
+  {
+    "title": "Vendedor de Harina para la Zona O\u2019Higgins, Maule y Chillan",
+    "company": "M&G Expert Consulting E.I.R.L.",
+    "location": "",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-vendedor-de-harina-para-la-zona-ohiggins-maule-y-chillan-en-rancagua-03847152D1379A3861373E686DCF3405#lc=ListOffers-Score4-2",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:12.982764+00:00"
+  },
+  {
+    "title": "Vendedor de Harina para la Zona O\u2019Higgins, Maule y Chillan",
+    "company": "M&G Expert Consulting E.I.R.L.",
+    "location": "",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-vendedor-de-harina-para-la-zona-ohiggins-maule-y-chillan-en-talca-4C22111D97D036E061373E686DCF3405#lc=ListOffers-Score4-3",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:13.011491+00:00"
+  },
+  {
+    "title": "Vendedor de Harina para la Zona O\u2019Higgins, Maule y Chillan",
+    "company": "M&G Expert Consulting E.I.R.L.",
+    "location": "",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-vendedor-de-harina-para-la-zona-ohiggins-maule-y-chillan-en-chillan-02FC83069A1BF15A61373E686DCF3405#lc=ListOffers-Score4-4",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:13.045604+00:00"
+  },
+  {
+    "title": "Ejecutivo/a Comercial Alto Desempe\u00f1o \u2013 Venta de Salud",
+    "company": "Manpower Chile",
+    "location": "4,2 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivoa-comercial-alto-desempeno-venta-de-salud-las-condes-en-santiago-las-condes-EE24725CA05911F361373E686DCF3405#lc=ListOffers-Score4-5",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:13.077538+00:00"
+  },
+  {
+    "title": "Vendedor Full Time Reemplazo Maui Espacio Urbano Vi\u00f1a Del Mar",
+    "company": "Maui and Sons",
+    "location": "",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-vendedor-full-time-reemplazo-maui-espacio-urbano-vina-del-mar-maui-and-sons-en-vina-del-mar-76CBCB9765AC6A9761373E686DCF3405#lc=ListOffers-Score4-6",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:13.114897+00:00"
+  },
+  {
+    "title": "Ejecutivo Comercial Canal Horeca",
+    "company": "Manpower Chile",
+    "location": "4,2 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivo-comercial-canal-horeca-en-santiago-renca-3B644B14DD94082761373E686DCF3405#lc=ListOffers-Score4-7",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:13.142521+00:00"
+  },
+  {
+    "title": "Vendedor de Tienda full time Estaci\u00f3n Central Turnos rotativos ma\u00f1ana tarde noche",
+    "company": "Esmax",
+    "location": "4,2 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-vendedor-de-tienda-full-time-estacion-central-turnos-rotativos-manana-tarde-noche-en-santiago-estacion-central-024165A144701A9961373E686DCF3405#lc=ListOffers-Score4-8",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:13.172845+00:00"
+  },
+  {
+    "title": "Vendedor Full Time Reemplazo Maui Alto Las Condes",
+    "company": "Maui and Sons",
+    "location": "",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-vendedor-full-time-reemplazo-maui-alto-las-condes-maui-and-sons-en-santiago-las-condes-85A49EE57130B80361373E686DCF3405#lc=ListOffers-Score4-10",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:13.241764+00:00"
+  },
+  {
+    "title": "Consultor(a) Comercial de Remuneraciones",
+    "company": "ECRGROUP\u00ae\ufe0f",
+    "location": "4,2 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-consultora-comercial-de-remuneraciones-ecr-group-en-santiago-nunoa-7DC1C92D836E2BF861373E686DCF3405#lc=ListOffers-Score4-11",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:13.304984+00:00"
+  },
+  {
+    "title": "Vendedor/a",
+    "company": "Adecco Chile",
+    "location": "4,2 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-vendedora-pt-25-concepcion-en-concepcion-FBA5F47B1EB4F12661373E686DCF3405#lc=ListOffers-Score4-12",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:13.374428+00:00"
+  },
+  {
+    "title": "Vendedor/a con experiencia Tienda Capilar 44 horas Mall Espacio Urbano La dehesa",
+    "company": "Tua Retail",
+    "location": "",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-vendedora-con-experiencia-tienda-capilar-44-horas-mall-espacio-urbano-la-dehesa-la-dehesa-en-santiago-lo-barnechea-ED2D0E8A88AF08DD61373E686DCF3405#lc=ListOffers-Score4-13",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:13.401619+00:00"
+  },
+  {
+    "title": "Cliente Inc\u00f3gnito \u2013 Evaluaci\u00f3n Servicio Comercial",
+    "company": "Importante empresa del sector",
+    "location": "Antofagasta, Antofagasta",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-cliente-incognito-evaluacion-servicio-comercial-zona-norte-iquique-antofagasta-y-copiapo-en-antofagasta-277565680B9D002F61373E686DCF3405#lc=ListOffers-Score4-14",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:13.432042+00:00"
+  },
+  {
+    "title": "Vendedor de Combustible Part Time P.10 Gran Avenida, San Miguel",
+    "company": "Esmax",
+    "location": "4,2 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-vendedor-de-combustible-part-time-p10-gran-avenida-san-miguel-sabados-y-domingos-20-horas-semanales-turnos-rotativos-de-manana-y-tarde-en-santiago-san-miguel-4BF5D0C435AA95E561373E686DCF3405#lc=ListOffers-Score4-15",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:13.455738+00:00"
+  },
+  {
+    "title": "Vendedor en terreno",
+    "company": "Klap",
+    "location": "",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-vendedor-en-terreno-antofagasta-en-antofagasta-5BE9C464B066ED8D61373E686DCF3405#lc=ListOffers-Score4-16",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:13.486588+00:00"
+  },
+  {
+    "title": "Asistente comercial",
+    "company": "Zona Laboral",
+    "location": "",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-asistente-comercial-en-santiago-providencia-1B585909C9DFC76461373E686DCF3405#lc=ListOffers-Score4-17",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:13.521485+00:00"
+  },
+  {
+    "title": "Vendedor/a Empresa Gastron\u00f3mica industrial / Sucursal Concepci\u00f3n",
+    "company": "Esencial Consultores SPA",
+    "location": "",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-vendedora-empresa-gastronomica-industrial-sucursal-concepcion-en-concepcion-CB063002AA16C95861373E686DCF3405#lc=ListOffers-Score4-18",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:13.544857+00:00"
+  },
+  {
+    "title": "Se requiere de Ejecutivo/a Comercial para ventas B2B con experiencia",
+    "company": "XinerLink",
+    "location": "3,9 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-se-requiere-de-ejecutivoa-comercial-para-ventas-b2b-con-experiencia-proyecto-en-las-condes-en-santiago-las-condes-6CBB76F830A013F161373E686DCF3405#lc=ListOffers-Score4-19",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:13.581642+00:00"
+  },
+  {
+    "title": "Promotor(a) Full Time Tecnolog\u00eda \u2013 Osorno",
+    "company": "Progestion Chile",
+    "location": "4,2 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-promotora-full-time-tecnologia-osorno-en-osorno-994925A9758CC29761373E686DCF3405#lc=ListOffers-Score4-0",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:13.617803+00:00"
+  },
+  {
+    "title": "Promotor(a) Full Time Tecnolog\u00eda \u2013 Puerto Montt",
+    "company": "Progestion Chile",
+    "location": "4,2 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-promotora-full-time-tecnologia-puerto-montt-en-puerto-montt-6785EBCE4B003CEB61373E686DCF3405#lc=ListOffers-Score4-1",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:13.657069+00:00"
+  },
+  {
+    "title": "Promotora Part Time Cosm\u00e9ticos y Cuidado Personal (Reemplazo), La Reina",
+    "company": "Comercial Portia",
+    "location": "4,3 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-promotora-part-time-cosmeticos-y-cuidado-personal-reemplazo-la-reina-mall-plaza-egana-la-reina-en-santiago-la-reina-5EFB084A01F2A12A61373E686DCF3405#lc=ListOffers-Score4-2",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:13.684733+00:00"
+  },
+  {
+    "title": "Promotor Junior Full Time para compa\u00f1\u00eda tecnolog\u00eda en Antofagasta",
+    "company": "Cygnus",
+    "location": "4,3 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-promotor-junior-full-time-para-compania-tecnologia-en-antofagasta-en-antofagasta-3B01BA6370AC403161373E686DCF3405#lc=ListOffers-Score4-3",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:13.717931+00:00"
+  },
+  {
+    "title": "Promotor de pinturas / Talagante",
+    "company": "LANCO",
+    "location": "",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-promotor-de-pinturas-talagante-en-talagante-2D1353AA2DB6F24961373E686DCF3405#lc=ListOffers-Score4-4",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:13.747549+00:00"
+  },
+  {
+    "title": "Promotor/a de Tecnolog\u00eda PART TIME",
+    "company": "Importante empresa del sector",
+    "location": "Vi\u00f1a del Mar, Valpara\u00edso",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-promotora-de-tecnologia-part-time-en-vina-del-mar-EBF8937CEBE4562561373E686DCF3405#lc=ListOffers-Score4-5",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:13.774067+00:00"
+  },
+  {
+    "title": "Promotor de pinturas / Las Condes",
+    "company": "LANCO",
+    "location": "",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-promotor-de-pinturas-las-condes-en-santiago-las-condes-A5FD937B9569031761373E686DCF3405#lc=ListOffers-Score4-6",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:13.809600+00:00"
+  },
+  {
+    "title": "Promotor Electro Hogar",
+    "company": "INCREXA CHILE CONSULTORA LTDA.",
+    "location": "",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-promotor-electro-hogar-melipilla-en-santiago-las-condes-13222ED50B4624D161373E686DCF3405#lc=ListOffers-Score4-7",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:13.837600+00:00"
+  },
+  {
+    "title": "Promotor/a Full time Campa\u00f1a Invierno",
+    "company": "Comercial Portia",
+    "location": "4,3 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-promotora-full-time-campana-invierno-colina-en-colina-70AA24FA9618148E61373E686DCF3405#lc=ListOffers-Score4-8",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:13.877127+00:00"
+  },
+  {
+    "title": "Promotor/a Junior Full Time para compa\u00f1\u00eda tecnolog\u00eda en Copiap\u00f3",
+    "company": "Cygnus",
+    "location": "4,3 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-promotora-junior-full-time-para-compania-tecnologia-en-copiapo-en-copiapo-35D9F44BCD61258061373E686DCF3405#lc=ListOffers-Score4-9",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:13.934314+00:00"
+  },
+  {
+    "title": "Promotor/a de Tecnolog\u00eda Full time",
+    "company": "Adecco Chile",
+    "location": "4,2 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-promotora-de-tecnologia-full-time-ruta-region-metropolitana-en-santiago-centro-1972A3FCC4FBD60861373E686DCF3405#lc=ListOffers-Score4-10",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:13.973671+00:00"
+  },
+  {
+    "title": "Promotor TV y Audio PT30 hrs ( Reemplazo hasta el 20 de abril )",
+    "company": "Manpower Chile",
+    "location": "4,2 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-promotor-tv-y-audio-pt30-hrs-reemplazo-hasta-el-20-de-abril--arica-en-arica-DA6D68BBA0D40D0C61373E686DCF3405#lc=ListOffers-Score4-11",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:14.011126+00:00"
+  },
+  {
+    "title": "Promotor/a de tecnolog\u00eda /Puerto Natales",
+    "company": "Cygnus",
+    "location": "4,3 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-promotora-de-tecnologia-puerto-natales-en-natales-B079CFEF99455BAC61373E686DCF3405#lc=ListOffers-Score4-12",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:14.043619+00:00"
+  },
+  {
+    "title": "Promotor/a de Tecnolog\u00eda /Puerto Natales",
+    "company": "Cygnus",
+    "location": "4,3 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-promotora-de-tecnologia-puerto-natales-en-natales-B802D52411843B0161373E686DCF3405#lc=ListOffers-Score4-13",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:14.082115+00:00"
+  },
+  {
+    "title": "Promotor/a de tecnolog\u00eda /Ancud",
+    "company": "Cygnus",
+    "location": "4,3 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-promotora-de-tecnologia-ancud-en-ancud-B2E54BC9A5935F8F61373E686DCF3405#lc=ListOffers-Score4-14",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:14.114193+00:00"
+  },
+  {
+    "title": "Promotor/a de Tecnolog\u00eda /Ancud",
+    "company": "Cygnus",
+    "location": "4,3 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-promotora-de-tecnologia-ancud-en-ancud-A044F59C3112BA3461373E686DCF3405#lc=ListOffers-Score4-15",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:14.150062+00:00"
+  },
+  {
+    "title": "Promotor/a de tecnolog\u00eda /Calbuco",
+    "company": "Cygnus",
+    "location": "4,3 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-promotora-de-tecnologia-calbuco-en-calbuco-D81CC84743CB12EC61373E686DCF3405#lc=ListOffers-Score4-16",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:14.183034+00:00"
+  },
+  {
+    "title": "Promotor/a de Tecnolog\u00eda /Calbuco",
+    "company": "Cygnus",
+    "location": "4,3 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-promotora-de-tecnologia-calbuco-en-calbuco-7FBDF47E674DA7DE61373E686DCF3405#lc=ListOffers-Score4-17",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:14.211690+00:00"
+  },
+  {
+    "title": "Promotor de tecnolog\u00eda Campa\u00f1a BTS Las Condes RM",
+    "company": "Salesland",
+    "location": "4,1 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-promotor-de-tecnologia-campana-bts-las-condes-rm-peak-time-30-horas-en-santiago-las-condes-47E8F050F276BFED61373E686DCF3405#lc=ListOffers-Score4-18",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:14.252502+00:00"
+  },
+  {
+    "title": "Promotor/a de Tecnolog\u00eda / Punta Arenas",
+    "company": "Cygnus",
+    "location": "4,3 ",
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-promotora-de-tecnologia-punta-arenas-en-punta-arenas-7B14C24E26B974C961373E686DCF3405#lc=ListOffers-Score4-19",
+    "source": "Computrabajo",
+    "scraped_at": "2026-04-07T14:08:14.283612+00:00"
+  },
+  {
+    "title": "Senior Full-Stack Engineer Full time",
+    "company": "Senior Full-Stack Engineer",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/jobs/programacion/senior-full-stack-engineer-ai-first-revel-street-llc-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:00.308820+00:00"
+  },
+  {
+    "title": "Technical Lead Full time",
+    "company": "Technical Lead",
+    "location": "Bogot\u00e1 or Cali (Hybrid)",
+    "url": "https://www.getonbrd.com/empleos/programacion/technical-lead-arkho-bogota-cali",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:00.335954+00:00"
+  },
+  {
+    "title": "Senior Software Engineer (L5) Full time",
+    "company": "Senior Software Engineer (L5)",
+    "location": "Lima (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/programming/senior-software-engineer-openloop-lima-9660",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:00.361208+00:00"
+  },
+  {
+    "title": "Desarrollador Back-end Java Full time",
+    "company": "Desarrollador Back-end Java",
+    "location": "Remote (Chile)",
+    "url": "https://www.getonbrd.com/jobs/programacion/desarrollador-backend-java-hf-solutions-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:00.401701+00:00"
+  },
+  {
+    "title": "Senior Full-Stack Engineer Full time",
+    "company": "Senior Full-Stack Engineer",
+    "location": "Remote (Chile)",
+    "url": "https://www.getonbrd.com/jobs/programacion/senior-fullstack-engenieer-omniscient-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:00.428669+00:00"
+  },
+  {
+    "title": "QA Engineer II (L4) Full time",
+    "company": "QA Engineer II (L4)",
+    "location": "Lima (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/sysadmin-devops-qa/qa-engineer-ii-l4-openloop-lima",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:00.528262+00:00"
+  },
+  {
+    "title": "DevOps Engineer (Contract, Latam) Full time",
+    "company": "DevOps Engineer (Contract, Latam)",
+    "location": "Remote (South America and Central America)",
+    "url": "https://www.getonbrd.com/jobs/sysadmin-devops-qa/devops-engineer-contract-latam-cloudkite-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:00.605086+00:00"
+  },
+  {
+    "title": "DevOps Engineer Full time",
+    "company": "DevOps Engineer",
+    "location": "Remote (South America, Central America or Mexico)",
+    "url": "https://www.getonbrd.com/empleos/sysadmin-devops-qa/devops-engineer-niuro-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:00.647725+00:00"
+  },
+  {
+    "title": "Cloud Noc Engineer Full time",
+    "company": "Cloud Noc Engineer",
+    "location": "Remote (6 locations)",
+    "url": "https://www.getonbrd.com/jobs/sysadmin-devops-qa/cloud-noc-engineer-whitestack-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:00.673375+00:00"
+  },
+  {
+    "title": "Data Engineer Full time",
+    "company": "Data Engineer",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/jobs/data-science-analytics/data-engineer-vame-ltd-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:01.033121+00:00"
+  },
+  {
+    "title": "Cloud Data Engineer Full time",
+    "company": "Cloud Data Engineer",
+    "location": "Santiago (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/data-science-analytics/cloud-data-engineer-witi-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:01.067876+00:00"
+  },
+  {
+    "title": "Business Analyst (Proyecto) Full time",
+    "company": "Business Analyst (Proyecto)",
+    "location": "Santiago (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/innovation-agile/business-analyst-proyecto-bc-tecnologia-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:01.094829+00:00"
+  },
+  {
+    "title": "Project Manager Full time",
+    "company": "Project Manager",
+    "location": "Remote (7 locations)",
+    "url": "https://www.getonbrd.com/jobs/innovacion-agilidad/project-manager-stacklist-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:01.129560+00:00"
+  },
+  {
+    "title": "Product Manager Tech Full time",
+    "company": "Product Manager Tech",
+    "location": "Santiago (In-office)",
+    "url": "https://www.getonbrd.com/empleos/innovacion-agilidad/product-manager-tech-pm-dev-agendapro-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:01.156236+00:00"
+  },
+  {
+    "title": "Account Executive (English/Spanish) B2B SaaS Full time",
+    "company": "Account Executive (English/Spanish) B2B SaaS",
+    "location": "Remote (North America, South America or Central America)",
+    "url": "https://www.getonbrd.com/jobs/sales/account-executive-english-spanish-b2b-saas-spacebring-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:01.598913+00:00"
+  },
+  {
+    "title": "Asesor de Inversiones Digital Full time",
+    "company": "Asesor de Inversiones Digital",
+    "location": "Remote (Chile)",
+    "url": "https://www.getonbrd.com/jobs/comercial-ventas/asesor-de-inversiones-patrimore-remote-18d4",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:01.630441+00:00"
+  },
+  {
+    "title": "Sales Team Leader in Tourism Full time",
+    "company": "Sales Team Leader in Tourism",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/jobs/comercial-ventas/sales-team-leader-in-tourism-opatrip-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:01.798412+00:00"
+  },
+  {
+    "title": "Asistente de Back Office (Practicante) Full time\ud83d\ude80 RESPONDE R\u00c1PIDO",
+    "company": "Asistente de Back Office (Practicante)",
+    "location": "Remote (Chile)",
+    "url": "https://www.getonbrd.com/empleos/operaciones-management/asistente-de-back-office-practicante-patrimore-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:14:57.036266+00:00"
+  },
+  {
+    "title": "Construction Estimator Assistant Full time",
+    "company": "Construction Estimator Assistant",
+    "location": "Remote (13 locations)",
+    "url": "https://www.getonbrd.com/jobs/operaciones-management/estimator-assistant-workbetternow-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:02.006398+00:00"
+  },
+  {
+    "title": "Asistente Administrativo (Proyecto Pre Post Natal) Full time",
+    "company": "Asistente Administrativo (Proyecto Pre Post Natal)",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/jobs/operations-management/asistente-administrativo-proyecto-pre-post-natal-enviame-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:02.033566+00:00"
+  },
+  {
+    "title": "Graphic Designer Full time",
+    "company": "Graphic Designer",
+    "location": "Lima (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/diseno-ux/graphic-designer-colectivo23-lima",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:02.171270+00:00"
+  },
+  {
+    "title": "Dise\u00f1ador Digital Marketing Full time",
+    "company": "Dise\u00f1ador Digital Marketing",
+    "location": "Santiago (Hybrid)",
+    "url": "https://www.getonbrd.com/empleos/diseno-ux/disenador-digital-marketing-leytonmedia-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:02.201986+00:00"
+  },
+  {
+    "title": "Support Specialist Full time",
+    "company": "Support Specialist",
+    "location": "Lima (In-office)",
+    "url": "https://www.getonbrd.com/jobs/servicio-cliente/support-specialist-centro-medico-del-trabajador-lima",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:02.727942+00:00"
+  },
+  {
+    "title": "Brand Assistant Full time",
+    "company": "Brand Assistant",
+    "location": "Lima (Hybrid)",
+    "url": "https://www.getonbrd.com/jobs/marketing-digital/brand-assistant-colectivo23-lima",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:05.021333+00:00"
+  },
+  {
+    "title": "AI Product Engineer \u2013 Forward Deployed Engineer Full time\ud83d\ude80 RESPONDE R\u00c1PIDO",
+    "company": "AI Product Engineer \u2013 Forward Deployed Engineer",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/empleos/machine-learning-ai/ai-product-engineer-forward-deployed-engineer-nine-67-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:05.394807+00:00"
+  },
+  {
+    "title": "Soporte T\u00e9cnico Terreno Full time",
+    "company": "Soporte T\u00e9cnico Terreno",
+    "location": "Santiago (In-office)",
+    "url": "https://www.getonbrd.com/empleos/technical-support/soporte-tecnico-terreno-bc-tecnologia-santiago-a3d6",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:05.661905+00:00"
+  },
+  {
+    "title": "T\u00e9cnico de Soporte Terreno/ Part Time Part time",
+    "company": "T\u00e9cnico de Soporte Terreno/ Part Time",
+    "location": "Santiago (In-office)",
+    "url": "https://www.getonbrd.com/empleos/technical-support/tecnico-de-soporte-terreno-part-time-bc-tecnologia-santiago",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:05.771373+00:00"
+  },
+  {
+    "title": "Periodista Comunicaciones Internas (Proyecto Pre Post Natal) Full time",
+    "company": "Periodista Comunicaciones Internas (Proyecto Pre Post Natal)",
+    "location": "Remote",
+    "url": "https://www.getonbrd.com/empleos/publicidad-medios/periodista-comunicaciones-internas-proyecto-pre-post-natal-enviame-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:06.267936+00:00"
+  },
+  {
+    "title": "Video Ads Editor (Ugc / Shortform) Freelance",
+    "company": "Video Ads Editor (Ugc / Shortform)",
+    "location": "Remote (North America and South America)",
+    "url": "https://www.getonbrd.com/jobs/advertising-media/video-ads-editor-ugc-shortform-commerce-theory-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:06.906114+00:00"
+  },
+  {
+    "title": "Senior Recruiter (US Focused AI Recruiting) Full time",
+    "company": "Senior Recruiter (US Focused AI Recruiting)",
+    "location": "Remote (South America and Mexico)",
+    "url": "https://www.getonbrd.com/jobs/hr/senior-recruiter-us-focused-ai-recruiting-clera-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:07.092890+00:00"
+  },
+  {
+    "title": "Asistente de Back Office (Practicante) Full time\ud83d\ude80 RESPONDE R\u00c1PIDO",
+    "company": "Asistente de Back Office (Practicante)",
+    "location": "Remote (Chile)",
+    "url": "https://www.getonbrd.com/jobs/operaciones-management/asistente-de-back-office-practicante-patrimore-remote",
+    "source": "GetOnBoard",
+    "scraped_at": "2026-04-07T14:19:01.887382+00:00"
+  },
+  {
+    "title": "Vendedor Full Time Bio Bio",
+    "company": "Skechers Chile",
+    "location": "Concepci\u00f3n, Biob\u00edo",
+    "url": "https://indeed.com/rc/clk?jk=a18919afdd1f9d9f&bb=rJ_1uobHnH512D4u7hf4xMF6U1uoZoHDbIpzwrfsOMzV5alVm92a6Ts0p8J65ktaPKOlwF-_CO6bpzGr-t90oBdJe_1EiW-9OatN7KolVzGtBmddeKk_2LDs7ZpnqxXT8SZCgM_-Xtw%3D&xkcb=SoBF67M3l0ByFzycgB0LbzkdCdPP&fccid=4ee282fbb93a3724&vjs=3",
+    "source": "Indeed",
+    "scraped_at": "2026-04-07T14:22:44.234294+00:00"
+  },
+  {
+    "title": "VENDEDOR/A MEDIO TIEMPO - Santiago",
+    "company": "BIMBA Y LOLA",
+    "location": "Santiago de Chile, Regi\u00f3n Metropolitana",
+    "url": "https://indeed.com/rc/clk?jk=e8d59fe2fe9a5323&bb=rJ_1uobHnH512D4u7hf4xFB9jwPEYYXPWOCh1c5RmRqvpu_8ORZi1usJqNi2JrZKcQVAi86YsudyZtxl5tnM2Um6-visg9bXmmi6_41cpcLuc_o4WLWgq_PobuWsMTf5dONjBAwuSBE%3D&xkcb=SoDx67M3l0ByFzycgB0KbzkdCdPP&fccid=acd9f990a54deb79&cmp=BIMBA-Y-LOLA&ti=Vendedor&vjs=3",
+    "source": "Indeed",
+    "scraped_at": "2026-04-07T14:22:44.266698+00:00"
+  },
+  {
+    "title": "Vendedor Part Time",
+    "company": "Skechers Chile",
+    "location": "Concepci\u00f3n, Biob\u00edo",
+    "url": "https://indeed.com/rc/clk?jk=1af46b9d6cd34540&bb=rJ_1uobHnH512D4u7hf4xHKsEwICg2b3nNLnK7w2EKjb7jKDWDxqgAKns77ryJS1FxPUVFyw4nHGseXy97sE9jhZfL6CC82yI3inT416-cPSq0IRtX-ziU-N5fvRbuUIoqgK9WW7BFI%3D&xkcb=SoBs67M3l0ByFzycgB0JbzkdCdPP&fccid=4ee282fbb93a3724&vjs=3",
+    "source": "Indeed",
+    "scraped_at": "2026-04-07T14:22:44.300687+00:00"
+  },
+  {
+    "title": "Vendedor Full Time reemplazo Talca",
+    "company": "Cannon Ltda",
+    "location": "Talca, Maule",
+    "url": "https://indeed.com/rc/clk?jk=cd98701c7b5abd24&bb=rJ_1uobHnH512D4u7hf4xMn0L-Qb1CGhzGWzO3A9S22J3bae01oIiHkXWLzC_z-Q7wrFuSjjZLROiufFQP3OOuzibriLM_noJwzpTNi7EicTAR3tusdmOuQ3wPNCTnLhnTIbbaba4FM%3D&xkcb=SoDY67M3l0ByFzycgB0IbzkdCdPP&fccid=37e72340c74bf741&vjs=3",
+    "source": "Indeed",
+    "scraped_at": "2026-04-07T14:22:44.328397+00:00"
+  },
+  {
+    "title": "Vendedor Full Time Bamers Concepci\u00f3n",
+    "company": "ARTICULOS DEPORTIVOS BELSPORT SPA",
+    "location": "Concepci\u00f3n, Biob\u00edo",
+    "url": "https://indeed.com/rc/clk?jk=086c9a2902c55121&bb=rJ_1uobHnH512D4u7hf4xN5EmV9ZmOReW2Gin-BIsSD1E3d9BT-3sHnHbr5QDVW8AFPHg3oVGnnapcNArvs6fiiNTDA0Oz9cuySz_6JYsm2tgOTaaAMCDW6ciWoc-XbjvJJWul9Ayr0%3D&xkcb=SoBW67M3l0ByFzycgB0PbzkdCdPP&fccid=f48a5908ce562b0f&vjs=3",
+    "source": "Indeed",
+    "scraped_at": "2026-04-07T14:22:44.358698+00:00"
+  },
+  {
+    "title": "Vendedor",
+    "company": "Virec Spa",
+    "location": "Temuco, Araucan\u00eda",
+    "url": "https://indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0DZf8JFqxGKr-YIwaMb2T9455yZ7sgYwFudgn78DE01ZTnhgZC6EeoayrOZNgMCnNms4ZX_HYh60CnoM9Tc0RAsNqQ0XAUMpC5O4oPNoR-pQZv3qjCw-ah6eokFLAexQLja1Y86xDWUBJXKSvk0PSuKe1NpUQc1ywGLap7pH5KM_jVFQTQe0R3sKFDCZkphZZVeONLEr10VBo79r95hjYVLUQfiPkkllJNjkAmEhCnaZlw5G0wdnL52XAVixlD7P17PhUOFuHpTEVj4vsgdqHKsQh90A7PGv_RtUltEBbo9hnPj6urSJyyOS5aUx9qPxM8p8LrJiEliaKVKRosXWX4g-HGyPCl61AdTWg7OX1DJYCrQd8k5y7b_uL-C6fcqfolqFIOR1xXUrpAeXrxzlhmjxY3N44F1weRsHhKSOrBW1UOb1t-8i9zwm1V0VSHQ3YjnuSpRSm9Qnf1aJkbetgMgW9bCZCTHoKTR4y5m4fFU1FxpKzKTGl_7H63tZr8Lyl95d_xq4SR3kp90BmC5gQmicg7iRGdDwH3t8d69Dqtne8R6-al7jzAPGmdsXO2MaL_TnEO5EBbvuW0XG_2X5xBDY-4usX36jxjyz7imJChoigvUlFVFAdVBjIIIHXcE2TOIk-FXv4NuRlmEHTM0H8ve&xkcb=SoAW6_M3l0ByFzycgB0ObzkdCdPP&camk=UoKtGZLa3XIP9OjB2RphMA==&p=5&fvj=0&vjs=3",
+    "source": "Indeed",
+    "scraped_at": "2026-04-07T14:22:44.393423+00:00"
+  },
+  {
+    "title": "Vendedor Part Time DOITE Temuco",
+    "company": "Doite",
+    "location": "Temuco, Araucan\u00eda",
+    "url": "https://indeed.com/rc/clk?jk=55c60e76084355e5&bb=rJ_1uobHnH512D4u7hf4xMF6U1uoZoHD6vNMKni0DpmqZZFrcflDEsTLmDx8DN4aEORL0gFIiaVB27WhXCc1DKBM1cLyTeSenOm0Vyxxohxzta2pXm226ugUqNRJq61idB2H452jaM0%3D&xkcb=SoB_67M3l0ByFzycgB0NbzkdCdPP&fccid=67a80146aebb1ad3&vjs=3",
+    "source": "Indeed",
+    "scraped_at": "2026-04-07T14:22:44.434813+00:00"
+  },
+  {
+    "title": "Vendedor/a Part Time 20 hrs Columbia Mall Plaza Tobalaba",
+    "company": "Forus",
+    "location": "Las Condes, Regi\u00f3n Metropolitana",
+    "url": "https://indeed.com/rc/clk?jk=54f29567e0c49c11&bb=rJ_1uobHnH512D4u7hf4xMGkS-YNweeOKS8RNdIU3df0xDA8egof7-A0arbOH1WL86US37Wc1IYjeUerwQMK9SoFUrq-hkEpnHadTgdrHVG_VsPNoLfyZN-q0TVpZTRiu9CZUqOiekc%3D&xkcb=SoDL67M3l0ByFzycgB0MbzkdCdPP&fccid=415b644dc1c5d182&vjs=3",
+    "source": "Indeed",
+    "scraped_at": "2026-04-07T14:22:44.480273+00:00"
+  },
+  {
+    "title": "Asesor de ventas de Part Time Vi\u00f1a del Mar",
+    "company": "STUDIOF",
+    "location": "Vi\u00f1a del Mar, Valpara\u00edso",
+    "url": "https://indeed.com/rc/clk?jk=a02d2558fe667488&bb=rJ_1uobHnH512D4u7hf4xG1aBu1jSxgEuPS3Y2BU-oo9Uhc7MTcstQ4cdk9Kx-2soFPBlyB5v17GU9587sxiKygdYsS4DPUPch3LOz5KCY4zylTTlvS_ndjSjdZdOFHFVdO08IERLyc%3D&xkcb=SoAi67M3l0ByFzycgB0DbzkdCdPP&fccid=0ca11fc10672450c&cmp=Studiof&ti=Asesor+de+ventas&vjs=3",
+    "source": "Indeed",
+    "scraped_at": "2026-04-07T14:22:44.510115+00:00"
+  },
+  {
+    "title": "Vendedor Automotriz Santiago",
+    "company": "Bruno Fritsch",
+    "location": "Santiago de Chile, Regi\u00f3n Metropolitana",
+    "url": "https://indeed.com/rc/clk?jk=0e6814fc107e3c6e&bb=rJ_1uobHnH512D4u7hf4xC6ef8C1Wpp5jJ2UOlfF1vUFGevuO5nnGRWizH3ZkGZIAlhaEuC-RA9JmbwzyRMO2OJXIlOQzQRAde39TfDIUSDew1eY1MLTHEmmvMk9r1jt5ljlFg4L14Y%3D&xkcb=SoCW67M3l0ByFzycgB0CbzkdCdPP&fccid=1112c3fc7b11270c&vjs=3",
+    "source": "Indeed",
+    "scraped_at": "2026-04-07T14:22:44.543221+00:00"
+  },
+  {
+    "title": "Vendedor Full Time Lo Barnechea",
+    "company": "Moulie Chocolaterie",
+    "location": "Santiago de Chile, Regi\u00f3n Metropolitana",
+    "url": "https://indeed.com/rc/clk?jk=31e364048a5ee264&bb=rJ_1uobHnH512D4u7hf4xOUERWy2xtOKyq9dex5_FKmg-fC-Fdieaf0X4EzFSQE7YwsbCDJyvR49lBKQPT6vrRD2cKrOo67p0MAXEThElwb7rAByI18jp3QNKDdtbMPdjRb4bXk_Z_U%3D&xkcb=SoAL67M3l0ByFzycgB0BbzkdCdPP&fccid=9e2daf9f6042de30&cmp=Moulie-Chocolaterie&ti=Vendedor&vjs=3",
+    "source": "Indeed",
+    "scraped_at": "2026-04-07T14:22:44.572611+00:00"
+  },
+  {
+    "title": "Vendedor(a) Part Time 20 hrs - Apumanque",
+    "company": "Rotter y Krauss Ltda",
+    "location": "Las Condes, Regi\u00f3n Metropolitana",
+    "url": "https://indeed.com/rc/clk?jk=193d1d9bacc64ca2&bb=rJ_1uobHnH512D4u7hf4xNgm-jAsn4_EiNDTRnC1yJvksX91gCh-9PkPJv7le0kXGavME1fS7BdKm_OGvwBG8cCBkPl_Jg3m-fwUM9mK8EPBBQ33Sm2T2ig_ovtKlr4v5EW1XyKTbaI%3D&xkcb=SoC_67M3l0ByFzycgB0AbzkdCdPP&fccid=95648a6e077a2bae&vjs=3",
+    "source": "Indeed",
+    "scraped_at": "2026-04-07T14:22:44.610276+00:00"
+  },
+  {
+    "title": "Vendedor/a 30 horas / Vivo Los Trapenses / Lo Barnechea",
+    "company": "La Casa de las Carcasas",
+    "location": "Santiago de Chile, Regi\u00f3n Metropolitana",
+    "url": "https://indeed.com/rc/clk?jk=7284bbcfcc98a318&bb=rJ_1uobHnH512D4u7hf4xGM08yc2-Xj9t0bC_QJi6oSkSC_PkMDlrFKoxNmzF8cJt5cM3xcPwcfi9g_BxuB1g3t3MpNDb8pXP7eow_40f8kOD0W70LCMeMOQz5jb54vvLnuakGVTf6g%3D&xkcb=SoAx67M3l0ByFzycgB0HbzkdCdPP&fccid=508557effb5995a0&vjs=3",
+    "source": "Indeed",
+    "scraped_at": "2026-04-07T14:22:44.853883+00:00"
+  },
+  {
+    "title": "Vendedor Part Time - San Bernardo",
+    "company": "Grupo Chiozza",
+    "location": "Santiago de Chile, Regi\u00f3n Metropolitana",
+    "url": "https://indeed.com/rc/clk?jk=21a8dfbd586a2298&bb=rJ_1uobHnH512D4u7hf4xEI212S42p0lPlvlSHOtBqUv-IxJnTqDq7ducFw2zBe6dNkGlOPXT_HNYkJl59-K8roZBAOruVa_n89G1hqC7LD8d1Kn6fksEq2B6DpFlrv5CgqLEVtztU4%3D&xkcb=SoCF67M3l0ByFzycgB0GbzkdCdPP&fccid=0f1b9c31437f4212&cmp=Grupo-Chiozza&ti=Vendedor&vjs=3",
+    "source": "Indeed",
+    "scraped_at": "2026-04-07T14:22:44.884595+00:00"
+  },
+  {
+    "title": "VENDEDOR/A - Santiago",
+    "company": "BIMBA Y LOLA",
+    "location": "Santiago de Chile, Regi\u00f3n Metropolitana",
+    "url": "https://indeed.com/rc/clk?jk=bf9ba7d8d1dc72a6&bb=rJ_1uobHnH512D4u7hf4xNPscTvEZF5s0u0hiv-70mUC9Kjfp1OZKvmbAbzSFwNXcPrnehK-rbhFHE6EgZm7gAbQH3GJOI7htFsKDtFW0p58yuk2BVWDQJFxmJvgf7CxB2T-Sdou2Vg%3D&xkcb=SoAY67M3l0ByFzycgB0FbzkdCdPP&fccid=acd9f990a54deb79&cmp=BIMBA-Y-LOLA&ti=Vendedor&vjs=3",
+    "source": "Indeed",
+    "scraped_at": "2026-04-07T14:22:44.915515+00:00"
+  }
+]

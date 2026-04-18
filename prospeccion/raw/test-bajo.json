@@ -1,0 +1,1 @@
+{\n  \"empresa\": \"MegaCorp\",\n  \"web\": \"https://megacorp.com\",\n  \"ubicacion\": \"USA\",\n  \"vacantes\": [\n    {\n      \"titulo\": \"Vendedor Ejecutivo\",\n      \"descripcion\": \"Alta gerencia, todo automatizado\",\n      \"fecha\": \"2026-03-20\",\n      \"salario\": \"5M CLP\"\n    }\n  ]\n}
