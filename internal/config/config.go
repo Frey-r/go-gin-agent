@@ -47,6 +47,36 @@ type Config struct {
 	// Rate Limiting
 	RateLimitRPM      int // requests per minute (global)
 	AuthRateLimitRPM  int // requests per minute (auth endpoints)
+
+	// Playground (anonymous agent playground)
+	PlaygroundAgentTTLMinutes   int
+	PlaygroundMaxAgentsPerIP    int
+	PlaygroundMaxConversationsIP int
+	PlaygroundHTTPTimeoutSecs   int
+	PlaygroundHTTPMaxBodyBytes  int64
+	PlaygroundRateLimitRPM      int
+}
+
+// PlaygroundDefaults returns the default playground configuration.
+func PlaygroundDefaults() *PlaygroundConfig {
+	return &PlaygroundConfig{
+		AgentTTLMinutes:         10,
+		MaxAgentsPerIP:          3,
+		MaxConversationsPerIP:    5,
+		HTTPTimeoutSeconds:      10,
+		HTTPMaxBodyBytes:         512 * 1024, // 512KB
+		RateLimitRPM:            10,
+	}
+}
+
+// PlaygroundConfig holds playground-specific settings.
+type PlaygroundConfig struct {
+	AgentTTLMinutes         int
+	MaxAgentsPerIP          int
+	MaxConversationsPerIP   int
+	HTTPTimeoutSeconds      int
+	HTTPMaxBodyBytes        int64
+	RateLimitRPM            int
 }
 
 // Load reads configuration from environment variables and validates required fields.
@@ -80,6 +110,13 @@ func Load() *Config {
 
 		RateLimitRPM:     envOrDefaultInt("RATE_LIMIT_RPM", 60),
 		AuthRateLimitRPM: envOrDefaultInt("AUTH_RATE_LIMIT_RPM", 5),
+
+		PlaygroundAgentTTLMinutes:    envOrDefaultInt("PLAYGROUND_AGENT_TTL_MINUTES", 10),
+		PlaygroundMaxAgentsPerIP:     envOrDefaultInt("PLAYGROUND_MAX_AGENTS_PER_IP", 3),
+		PlaygroundMaxConversationsIP: envOrDefaultInt("PLAYGROUND_MAX_CONVERSATIONS_PER_IP", 5),
+		PlaygroundHTTPTimeoutSecs:    envOrDefaultInt("PLAYGROUND_HTTP_TIMEOUT_SECONDS", 10),
+		PlaygroundHTTPMaxBodyBytes:   envOrDefaultInt64("PLAYGROUND_HTTP_MAX_BODY_BYTES", 512*1024),
+		PlaygroundRateLimitRPM:      envOrDefaultInt("PLAYGROUND_RATE_LIMIT_RPM", 10),
 	}
 
 	// Validate at least one LLM provider is configured

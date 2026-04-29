@@ -19,6 +19,7 @@ import (
 	"github.com/ebachmann/go-gin-agent/internal/middleware"
 	"github.com/ebachmann/go-gin-agent/internal/service"
 	"github.com/ebachmann/go-gin-agent/internal/store"
+	"github.com/ebachmann/go-gin-agent/internal/store/playground"
 	"github.com/ebachmann/go-gin-agent/internal/tools"
 )
 
@@ -87,6 +88,22 @@ func main() {
 	agentRunner := agent.NewRunner(fabric, toolRegistry, promptStore, convStore)
 	// Agent definitions are loaded per-organization on demand
 	_ = agentRunner // available for chat handler when agent_id is specified
+
+	// ── Playground (anonymous agent playground) ─────────────────
+	pgAgentStore := playground.NewAgentStore(playground.AgentStoreConfig{
+		TTLMinutes:     cfg.PlaygroundAgentTTLMinutes,
+		MaxAgentsPerIP: cfg.PlaygroundMaxAgentsPerIP,
+		CleanupSecs:    60,
+	})
+	pgConvStore := playground.NewConversationStore(playground.ConversationStoreConfig{
+		TTLMinutes:   cfg.PlaygroundAgentTTLMinutes,
+		MaxConvPerIP: cfg.PlaygroundMaxConversationsIP,
+		CleanupSecs:  60,
+	})
+	httpExecutor := tools.NewHTTPExecutor(cfg.PlaygroundHTTPTimeoutSecs, cfg.PlaygroundHTTPMaxBodyBytes)
+	pgRunner := agent.NewPlaygroundRunner(fabric, pgAgentStore, pgConvStore, httpExecutor)
+	pgHandler := handler.NewPlaygroundHandler(pgAgentStore, pgConvStore, pgRunner, httpExecutor)
+	playgroundLimiter := middleware.NewRateLimiter(cfg.PlaygroundRateLimitRPM)
 
 	// ── Handlers ────────────────────────────────────────────────
 	authHandler := handler.NewAuthHandler(authService)
@@ -157,6 +174,18 @@ func main() {
 		protected.GET("/agents/:agent_id", promptHandler.GetAgent)
 	}
 
+	// Playground (anonymous, rate-limited by IP)
+	playground := router.Group("/playground")
+	playground.Use(middleware.VisitorID())
+	playground.Use(playgroundLimiter.ByIP())
+	{
+		playground.POST("/agents", pgHandler.CreateAgent)
+		playground.GET("/agents/:agent_id", pgHandler.GetAgent)
+		playground.DELETE("/agents/:agent_id", pgHandler.DeleteAgent)
+		playground.POST("/chat/stream", pgHandler.StreamChat)
+		playground.POST("/agents/:agent_id/delegate", pgHandler.Delegate)
+	}
+
 	// ── HTTP Server with Graceful Shutdown ───────────────────────
 	srv := &http.Server{
 		Addr:              ":" + cfg.Port,
@@ -186,8 +215,10 @@ func main() {
 	defer cancel()
 
 	if err := srv.Shutdown(ctx); err != nil {
-		log.Error().Err(err).Msg("server forced shutdown")
+		log.Error().Err(err).Msg("forced shutdown")
 	}
 
+	pgAgentStore.Stop()
+	pgConvStore.Stop()
 	log.Info().Msg("server stopped")
 }
